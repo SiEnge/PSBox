@@ -1,0 +1,76 @@
+.pop-compare {
+  &::after {
+    right: 60px;
+  }
+}
+
+.pop-compare__icon {
+  &--trash {
+    top: 24px;
+    right: 7px;
+  }
+  &--compare {
+    top: 24px;
+    right: 33px;
+  }
+}
+
+.pop-compare__text {
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.pop-compare__total-wrap {
+  background-color: @light-grey;
+}
+
+.pop-compare__form {
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+.pop-compare__input {
+  display: inline-block;
+  width: 260px;
+  margin-right: 10px;
+}
+
+.pop-compare__button {
+  width: 160px;
+}
+
+@media @tablet {
+  .pop-compare::after {
+    right: 87px;
+  }
+
+  .pop-compare__input {
+    display: inline-block;
+    width: 300px;
+    margin-right: 10px;
+  }
+}
+
+@media @desktop {
+  .pop-compare::after {
+    right: 149px;
+  }
+
+  .pop-compare__text {
+    padding-left: 20px;
+  }
+
+  .pop--basket::after {
+    right: 51px;
+  }
+
+  .pop-compare__icon {
+    &--trash {
+      right: 17px;
+    }
+    &--compare {
+      right: 49px;
+    }
+  }
+}

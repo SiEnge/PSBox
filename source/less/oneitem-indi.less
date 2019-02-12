@@ -1,0 +1,103 @@
+.oneitem-indi {
+  .title--headline {
+    font-size: 30px;
+  }
+}
+
+.oneitem-indi__text {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding-top: 13px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 10px;
+}
+
+.oneitem-indi__form {
+  padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  .form__fieldlabel {
+    display: block;
+  }
+  .form__button {
+    margin-right: 0;
+  }
+  .form__wrap--cost {
+    z-index: 10;
+  }
+}
+
+@media @tablet {
+  .oneitem-indi {
+    .title--headline {
+      font-size: 42px;
+      &::first-letter {
+        font-size: 42px;
+      }
+    }
+  }
+
+  .oneitem-indi__text {
+    font-size: 18px;
+    line-height: 24px;
+
+  }
+
+  .oneitem-indi__form {
+    padding-left: 22px;
+    padding-right: 22px;
+    .form__list {
+      // width: 198px;
+    }
+  }
+
+}
+
+@media @desktop1024 {
+  .oneitem-indi__form {
+
+    .form__list {
+      width: 172px;
+    }
+    .form__wrap--recipient {
+      width: 240px;
+    }
+    .form__wrap--cost {
+      width: 100px;
+    }
+    .form__wrap--range {
+      width: 230px;
+    }
+    .form__wrap--addition {
+      width: 360px;
+    }
+    .form__wrap--file {
+      width: 310px;
+    }
+    .form__comment {
+      min-height: 32px;
+    }
+    .form__fieldlabel {
+      left: 22px;
+    }
+  }
+}
+
+@media @desktop {
+  .oneitem-indi__form {
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 60px;
+    .form__list {
+      width: 186px;
+    }
+    .form__wrap--file {
+      width: 360px;
+    }
+  }
+}

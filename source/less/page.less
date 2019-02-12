@@ -1,0 +1,44 @@
+.page {
+  font-family: "FuturaBookC", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: @black;
+  background-color: @white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media @tablet {
+  .page__wrap--tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+@media @desktop1024 {
+  .page__wrap--1024 {
+    display: flex;
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+@media @desktop {
+  .page__wrap {
+    display: flex;
+    width: 1170px;
+    justify-content: space-between;
+  }
+
+  .page__wrap--wrap {
+    flex-wrap: wrap;
+  }
+
+  .page__wrap--reverse {
+    flex-direction: row-reverse;
+  }
+}

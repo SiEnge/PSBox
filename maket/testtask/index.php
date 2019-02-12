@@ -1,0 +1,100 @@
+<?php 
+if ($_SERVER['REQUEST_METHOD']=='POST') 
+{  
+    /*Место для обработки введённых значений серваком*/
+    //После обработки значений, если всё хорошо, редиректим на страницу с очищенной формой, чтобы не получилось двойной отправки при обновлении страницы
+    Header("Location: ".$_SERVER['PHP_SELF']);
+    exit();
+}
+?>
+<!DOCTYPE HTML> 
+<html>
+    <head>	
+        <meta charset="UTF-8">
+        <title>Тестовое задание</title>
+        <link rel="stylesheet" type="text/css" href="teststyle.css">        
+    </head>
+    <body>
+        <nav class="flexcol">
+            <p>Why Hyve</p>
+            <p>Cloud Hosting</p>
+            <p>Dedicated Servers</p>
+            <p>SFTP Hosting</p>
+            <p>Colocation</p>
+            <p>Solutions</p>
+        </nav>
+        <div id="rightsection">
+        </div>
+        <form method="post">
+        <div id="feedbackform" class="flexcol"> 
+            <p class="callback">Request a call back</p>
+            <p class="descript">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet sit amet elit ac consequat. Aenean ornare rutrum.</p>
+            <div class="flexrow first string">
+                <div id="space1"></div>
+                <div class="input">
+                    First Name<span>*</span>
+                    <input type="text" name="FirstName" id="field1" required />
+                    <div class="tooltip">Enter your First Name.</div>
+                </div>
+                <div class="space"></div>
+                <div class="input">
+                    Last Name<span>*</span>
+                    <input type="text" name="LastName" id="field2" required />
+                    <div class="tooltip">Enter your Last Name.</div>
+                </div>
+            </div>
+            <div class="br"></div>
+            <div class="flexrow second string">
+                <div id="space2"></div>
+                <div class="input">
+                    Email Address<span>*</span> 
+                    <input type="email" name="Email" id="field3" required />
+                    <div class="tooltip">Enter your Email Address.</div>
+                </div>
+                <div class="space"></div>
+                <div class="input">                
+                    Telephone<span>*</span> 
+                    <input type="tel" name="Phone" id="field4" required />
+                    <div class="tooltip">Enter your Telephone.</div>
+                </div>                
+            </div>
+            <div class="br"></div>
+            <div class="flexrow third string">
+                <div id="space3"></div>
+                <div class="input">
+                    Select a Reason<span>*</span> 
+                    <input type="text" list="reasons" name="Reason" id="field5" required />
+                    <div class="tooltip">Select some Reason.</div>
+                    <datalist id="reasons">
+                        <option value="First Reason"></option>
+                        <option value="Second Reason"></option>
+                        <option value="Third Reason"></option>
+                        <option value="Fourth Reason"></option>
+                    </datalist>
+                </div>  
+            </div> 
+            <div class="br"></div>
+            <div class="flexrow fourth string">
+                <div id="space4"></div>
+                <div class="input">
+                    Message<br/><br/>
+                    <input type="text" name="Msg" id="field6" />
+                    <div class="tooltip">Type a message.</div>
+                </div>
+            </div>
+            <div class="br"></div>
+            <div class="flexrow">
+            <div id="space5"></div>
+            <input type="submit" class="submit" value="Send Call back" disabled />
+            </div>
+        </div>
+        </form>        
+        <div id="background">
+        </div>
+        <footer>
+        </footer>        
+
+        <script src="jquery-3.1.1.js"></script>
+        <script src="test.js"></script>	        
+    </body>
+</html>

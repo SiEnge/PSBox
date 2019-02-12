@@ -1,0 +1,78 @@
+.condition {
+  padding-top: 10px;
+}
+
+.condition__wrap {
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 23px;
+  padding-bottom: 27px;
+  border-radius: 5px;
+  background-color: @blue;
+  background-image: url("../img/product_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.condition__title {
+  margin: 0;
+  font-weight: 100;
+  font-family: "Intro-inline";
+  font-style: normal;
+  font-size: 22px;
+  line-height: 32px;
+  color: @white;
+  margin-bottom: 15px;
+}
+
+.condition__button {
+  color: @white;
+  padding: 12px 26px;
+  border-width: 1px;
+  &:hover {
+    background: @white;
+    color: @black;
+  }
+}
+
+@media @tablet {
+  .condition {
+    width: 750px;
+  }
+
+
+  .condition__wrap {
+    padding-top: 26px;
+    padding-bottom: 29px;
+    // min-height: 24px;
+    background-image: url("../img/product_tablet.jpg");
+
+  }
+
+  .condition__title {
+    width: 250px;
+  }
+
+}
+
+@media @desktop {
+  .condition {
+    width: 288px;
+    margin-left: 8px;
+  }
+
+  .condition__wrap {
+    padding-top: 26px;
+    padding-bottom: 29px;
+    // min-height: 424px;
+    background-image: url("../img/product_desktop.jpg");
+
+  }
+
+  .condition__title {
+    min-height: 286px;
+  }
+}

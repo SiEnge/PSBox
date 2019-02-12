@@ -1,0 +1,35 @@
+.controls {
+  position: absolute;
+  content: "";
+  width: 48px;
+  height: 8px;
+}
+
+.controls__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls__radio {
+  position: relative;
+}
+
+.controls__button {
+  padding: 0;
+  content: "";
+  position: absolute;
+  background-color: @light-pink;
+  border: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.controls__radio--active .controls__button {
+  background-color: @rose;
+}

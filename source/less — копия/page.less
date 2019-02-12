@@ -1,0 +1,33 @@
+.page {
+  background-color: @white;
+  color: @black;
+  font-family: "FuturaBookC", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  // font-size: 14px;
+  // line-height: 24px;
+}
+
+@media @tablet {
+  .page__wrap--tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+  }
+}
+
+@media @desktop {
+  .page__wrap {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page__wrap--wrap {
+
+    flex-wrap: wrap;
+    // flex-direction: column;
+  }
+}

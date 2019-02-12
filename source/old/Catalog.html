@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>psbox</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<span id="main_preload"></span>
+<div class="wrap bg-white">
+    <header>
+        <div class="top">
+            <div class="container">
+                <div class="top__top">
+                    <div class="top__logo">
+                        <a href="/" class="logo"></a>
+                    </div>
+                    <div class="top__center">
+                        <div class="search">
+                            <button class="btn-search"></button>
+                        </div>
+                        <div class="menu">
+                            <nav>
+                                <a href="#">О нас</a>
+                                <a href="#">Как сделать заказ</a>
+                                <a href="#">Оплата и доставка</a>
+                                <a href="#">Отзывы</a>
+                                <a href="#">Контакты</a>
+                            </nav>
+                        </div>
+                        <div class="soc">
+                            <a href="#"><img src="img/ic-mes-tel.png" alt=""></a>
+                            <a href="#"><img src="img/ic-mes-vay.png" alt=""></a>
+                            <a href="#"><img src="img/ic-mes-wac.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="top__basket">
+                        <div>
+                            <button class="btn-favor" data-count="23"></button>
+                            <div class="pop__basket">
+                                <div class="title"><h4>избранные товары</h4></div>
+                                <div class="favorit">
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav active"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price fav">
+                                    <div>2 подарка 3500 Руб.</div>
+                                    <span>+ Индивидуальный заказ</span>
+                                </div>
+                                <div class="save-fav">
+                                    <div class="info">Чтобы сохранить свой список избранных подарков, отправьте их себя на email</div>
+                                    <form action="" method="post">
+                                        <div class="form-fav">
+                                            <input type="text" class="style-input-text" placeholder="Ваш email">
+                                            <button type="submit" class="btn btn-pur">Отправить</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="top__basket-bg"></div>
+                        </div>
+                        <div>
+                            <button class="btn-basket" data-count="5"></button>
+                            <div class="pop__basket">
+                                <div class="title">
+                                    <h4>Корзина</h4>
+                                    <a href="#" class="complec-link">Создать коллективный заказ</a>
+                                </div>
+                                <div class="favorit">
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav active"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price top-border">
+                                    <div>2 подарка 3500 Руб.</div>
+                                    <span>+ Индивидуальный заказ</span>
+                                </div>
+                                <div class="oform">
+                                    <a href="#" type="submit" class="btn btn-pur">оформить заказ</a>
+                                </div>
+                            </div>
+                            <div class="top__basket-bg"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="top__bottom">
+                    <ul class="menu">
+                        <li class="sub open">
+                            <a href="#">Каталог подарков</a>
+                            <ul>
+                                <li><a href="#" data-title="Любимым">Любимым</a></li>
+                                <li><a href="#" data-title="Друзьям">Друзьям</a></li>
+                                <li><a href="#" data-title="Родителям">Родителям</a></li>
+                                <li><a href="#" data-title="Коллегам">Коллегам</a></li>
+                                <li><a href="#" data-title="На день Рождения">На день Рождения</a></li>
+                                <li><a href="#" data-title="На свадьбу">На свадьбу</a></li>
+                                <li><a href="#" data-title="На годовщину">На годовщину</a></li>
+                                <li><a href="#" data-title="На выписку">На выписку</a></li>
+                                <li><a href="#" data-title="На новоселье">На новоселье</a></li>
+                                <li><a href="#" data-title="Просто так">Просто так</a></li>
+                                <li><a href="#" data-title="День Святого Валентина">День Святого Валентина</a></li>
+                                <li><a href="#" data-title="23 февраля">23 февраля</a></li>
+                                <li><a href="#" data-title="8 марта">8 марта</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">индивидуальный заказ</a></li>
+                        <li><a href="#">помощь в выборе подарка</a></li>
+                        <li><a href="#">корпоративным клиентам</a></li>
+                    </ul>
+                    <button class="menu-btn"><span></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container left-p">
+            <div class="bread-crumbs">
+                <a href="/">Главная</a>
+                <span>любимым</span>
+            </div>
+            <div class="title-con">
+                <h1>любимым</h1>
+            </div>
+            <div class="desc-text">
+                <p>Рыночная ситуация, на первый взгляд, однообразно ускоряет медиабизнес. Маркетинг, не меняя концепции, изложенной выше, трансформирует ролевой рекламный макет. SWOT-анализ нетривиален. Лидерство в продажах тормозит клиентский спрос. Бизнес-план стабилизирует медиабизнес, используя опыт предыдущих.</p>
+                <p>Спонсорство не критично. Практика однозначно показывает, что conversion rate неестественно детерминирует институциональный медиавес. Клиентский спрос индуцирует метод изучения рынка. Один из признанных классиков маркетинга Ф.Котлер определяет это так: социальная ответственность транслирует ребрендинг. Отсюда естественно следует, что повышение жизненных стандартов амбивалентно. </p>
+            </div>
+            <div class="form-param">
+                <div class="sort">
+                    <div class="slid-pric">
+                        <div class="title-sli">Диапазон цен, в руб.</div>
+                        <div class="slid-pric-bk">
+                            <input type="number" class="input-text-sort" id="sli-lef">
+                            <div id="slider-range"></div>
+                            <input type="number" class="input-text-sort" id="sli-rig">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="title-sli">Стоимость</div>
+                        <select name="" class="style-select-sort">
+                            <option value="">Любая</option>
+                            <option value="">Lorem.</option>
+                            <option value="">Lorem.</option>
+                            <option value="">Lorem.</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="title-sli">Получатель</div>
+                        <select name="" class="style-select-sort">
+                            <option value="">Неважно</option>
+                            <option value="">Lorem.</option>
+                            <option value="">Lorem.</option>
+                            <option value="">Lorem.</option>
+                        </select>
+                    </div>
+                    <div class="sort-cat">
+                        <div>Эксклюзив <a href="#"></a></div>
+                        <div>Хит <a href="#"></a></div>
+                        <div>новинка <a href="#"></a></div>
+                        <a href="#">В наличии</a>
+                    </div>
+                    <div class="reset-bk">
+                        <div><a href="#">Сбросить фильтры</a></div>
+                        <select name="" class="style-select-sort">
+                            <option value="">По цене</option>
+                            <option value="">Lorem.</option>
+                            <option value="">Lorem.</option>
+                            <option value="">Lorem.</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-param">
+                <div class="form-param__top">
+                    <div class="title">Состав подарка<span>*</span></div>
+                    <a href="#" class="reset">Сбросить фильтры</a>
+                </div>
+                <div class="form-param__checkbox">
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che1">
+                        <label for="che1">Алкогольные напитки</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che2">
+                        <label for="che2">Конфеты</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che3">
+                        <label for="che3">Пряники</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che4">
+                        <label for="che4">Варенье / джем</label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che5">
+                        <label for="che5">Пивные напитики</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che6">
+                        <label for="che6">Шоколад</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che7">
+                        <label for="che7">Марципаны</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che8">
+                        <label for="che8">Мёд - суфле</label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che9">
+                        <label for="che9">Безалкогольные напитки</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che10">
+                        <label for="che10">Суфле / зефир</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che11">
+                        <label for="che11">Пирожное</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che12">
+                        <label for="che12">Орехи</label>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che13">
+                        <label for="che13">Сиропы</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che14">
+                        <label for="che14">Мармелад</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che15">
+                        <label for="che15">Чай</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="sostav" id="che16">
+                        <label for="che16">Сувениры</label>
+                    </div>
+                </div>
+            </div>
+            <div class="individual-order">
+                <div class="img"></div>
+                <div class="right">
+                    <div class="title__bk">
+                        <div class="title__l">
+                            <a href="#">Индивидуальный заказ</a>
+                            <span>Соберите свой подарок!</span>
+                        </div>
+                        <div class="title__r">
+                            <a href="#" class="like active"></a>
+                            <a href="#" class="btn btn-card">В корзину</a>
+                        </div>
+                    </div>
+                    <p>Не нашли подходящего варианта? Есть свои идеи? Расскажите нам, что вы хотите собрать в коробочку! Выберите ингридиенты, опишите получателя, приложите фото примеров. А мы с удовольствием выполним ваши пожелания!</p>
+                </div>
+            </div>
+            <div class="create-order-bk flex center">
+                <div class="title_cre">эксклюзивные условия для <br>корпоративных заказов</div>
+                <a href="#" class="btn btn-white">Подробнее</a>
+            </div>
+
+            <div class="best-product">
+                <div class="best-product__img">
+                    <a class="active" href="img/gal-0-1.jpg" data-fancybox="gallery-1" style="background-image: url('img/gal-0-1.jpg')"><img src="img/gal-0-1.jpg" alt=""></a>
+                    <a href="img/gal-0-2.jpg" data-fancybox="gallery-1" style="background-image: url('img/gal-0-2.jpg')"><img src="img/gal-0-2.jpg" alt=""></a>
+                    <a href="img/gal-0-3.jpg" data-fancybox="gallery-1" style="background-image: url('img/gal-0-3.jpg')"><img src="img/gal-0-3.jpg" alt=""></a>
+                </div>
+                <div class="best-product__cont">
+                    <div class="title__bk">
+                        <div class="title__l">
+                            <a href="#">Черничные ночи</a>
+                            <span>1 450 Руб.</span>
+                        </div>
+                        <div class="title__r">
+                            <a href="#" class="like active"></a>
+                            <a href="#" class="btn btn-card">В корзину</a>
+                        </div>
+                    </div>
+                    <p>Надпись на заказ из шоколадных конфет со сливочной начинкой;</p>
+                    <p>Шоколад:</p>
+                    <ul>
+                        <li>«Ritter sport» черника со сливками,</li>
+                        <li>«Ты моя ягодка» молочный,</li>
+                    </ul>
+                    <p>Алкоголь (по 50 мл.):</p>
+                    <ul>
+                        <li>Черничный ликёр «Remedia Blueberry Liqueur Liviko Store»,</li>
+                        <li>Виски «McClelland’s Highland».</li>
+                    </ul>
+                    <h5>Товар в разделах каталога:</h5>
+                    <div class="categ-a">
+                        <a href="#">Любимым</a>
+                        <a href="#">на день рождения</a>
+                        <a href="#">на годовщину</a>
+                        <a href="#">просто так</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="best-product">
+                <div class="best-product__img">
+                    <a class="active" href="img/gal-1-1.jpg" data-fancybox="gallery-2" style="background-image: url('img/gal-1-1.jpg')"><img src="img/gal-1-1.jpg" alt=""></a>
+                    <a href="img/gal-1-2.jpg" data-fancybox="gallery-2" style="background-image: url('img/gal-1-2.jpg')"><img src="img/gal-1-2.jpg" alt=""></a>
+                    <a href="img/gal-1-3.jpg" data-fancybox="gallery-2" style="background-image: url('img/gal-1-3.jpg')"><img src="img/gal-1-3.jpg" alt=""></a>
+                </div>
+                <div class="best-product__cont">
+                    <div class="title__bk">
+                        <div class="title__l">
+                            <a href="#">Черничные ночи</a>
+                            <span>1 450 Руб.</span>
+                        </div>
+                        <div class="title__r">
+                            <a href="#" class="like"></a>
+                            <a href="#" class="btn btn-card">В корзину</a>
+                        </div>
+                    </div>
+                    <p>Надпись на заказ из шоколадных конфет со сливочной начинкой;</p>
+                    <p>Шоколад:</p>
+                    <ul>
+                        <li>«Ritter sport» черника со сливками,</li>
+                        <li>«Ты моя ягодка» молочный,</li>
+                    </ul>
+                    <p>Алкоголь (по 50 мл.):</p>
+                    <ul>
+                        <li>Черничный ликёр «Remedia Blueberry Liqueur Liviko Store»,</li>
+                        <li>Виски «McClelland’s Highland».</li>
+                    </ul>
+                    <h5>Товар в разделах каталога:</h5>
+                    <div class="categ-a">
+                        <a href="#">Любимым</a>
+                        <a href="#">на день рождения</a>
+                        <a href="#">на годовщину</a>
+                        <a href="#">просто так</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-bk">
+                <div class="text">+7 (495) 220 09 26 <br>г. Москва, ул. Донская, д. 8 стр. 1</div>
+                <div class="text">Приём заказов: <br>ежедневно <br>с 09.00 до 21.00</div>
+                <div class="mes">
+                    <a href="#"><img src="img/ic-mes-tel.png" alt=""></a>
+                    <a href="#"><img src="img/ic-mes-vay.png" alt=""></a>
+                    <a href="#"><img src="img/ic-mes-wac.png" alt=""></a>
+                </div>
+                <div class="soc">
+                    <a href="#"><img src="img/ic-soc-in.png" alt=""></a>
+                    <a href="#"><img src="img/ic-soc-fb.png" alt=""></a>
+                    <a href="#"><img src="img/ic-soc-vk.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-cop">PSBox © 2015 - 2018 г.</div>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="js/query-selector.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/lib.js"></script>
+<script>
+    $( function() {
+        $( "#slider-range" ).slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [ 75, 300 ],
+            slide: function( event, ui ) {
+
+                $("#sli-lef").val(ui.values[ 0 ]);
+
+                $("#sli-rig").val(ui.values[ 1 ]);
+
+            }
+        });
+        $("#sli-lef").val($( "#slider-range" ).slider( "values", 0 ));
+        $("#sli-rig").val($( "#slider-range" ).slider( "values", 1 ));
+
+    } );
+</script>
+</body>
+</html>

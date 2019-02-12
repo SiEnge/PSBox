@@ -1,0 +1,210 @@
+.oneitem__offers {
+  padding-top: 10px;
+  .offers__wrap {
+    float: none;
+    padding-right: 0;
+  }
+  .offers__img {
+    width: 290px;
+    height: 290px;
+    margin: 0;
+    img {
+      width: 290px;
+      height: 290px;
+    }
+  }
+  .offers__marklist {
+    width: 290px;
+    height: 290px;
+  }
+  .offers__info {
+    display: block;
+    width: auto;
+    min-height: auto;
+    padding-right: 180px;
+  }
+  .offers__price {
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .offers__text {
+    padding-top: 26px;
+    padding-bottom: 4px;
+    border: none;
+  }
+  .offers__text p {
+    padding-bottom: 4px;
+  }
+  .offers__list {
+    padding-bottom: 3px;
+  }
+  .offers__subtitle {
+    font-size: 15px;
+  }
+}
+
+.oneitem__button {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  .offers__compare {
+    position: static;
+  }
+  .offers__cart {
+    font-size: 14px;
+    position: static;
+    width: 140px;
+    margin-left: 6px;
+    padding-left: 32px;
+    color: @white;
+    background-position: left 10px center;
+    &:hover {
+      color: @violet;
+    }
+  }
+}
+
+.oneitem__slider {
+  width: 290px;
+  padding-bottom: 5px;
+}
+
+.oneitem__preview {
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 5px;
+  p {
+    margin: 0;
+  }
+  img {
+    width: 60px;
+    height: 60px;
+    margin-right: 6px;
+    margin-left: 6px;
+    border-radius: 5px;
+  }
+}
+
+.oneitem__review {
+  position: relative;
+  padding-top: 20px;
+  .title--subsubtitle {
+    padding-bottom: 10px;
+  }
+}
+
+.oneitem__reviewbtn {
+  width: 100%;
+  border: 3px solid @rose;
+  &:hover {
+    color: @white;
+    background-color: @rose;
+  }
+}
+
+@media @tablet {
+  .oneitem__slider {
+    width: 385px;
+  }
+  .oneitem__offers {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    .offers__wrap {
+      float: left;
+      min-height: 500px;
+      margin-right: 14px;
+    }
+    .offers__img {
+      width: 384px;
+      height: 385px;
+      img {
+        width: 384px;
+        height: 385px;
+      }
+    }
+    .offers__text {
+      font-size: 18px;
+      width: 335px;
+      p {
+        padding-bottom: 14px;
+      }
+    }
+    .offers__marklist {
+      width: 384px;
+      height: 300px;
+    }
+    .offers__list {
+      padding-bottom: 14px;
+    }
+    .offers__info {
+      display: inline-block;
+      width: 135px;
+      padding-top: 0;
+      padding-right: 200px;
+    }
+    .offers__price {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    .offers__subtitle {
+      font-size: 18px;
+    }
+    .offers__nav {
+      display: inline-block;
+      width: 335px;
+      padding-top: 2px;
+    }
+  }
+
+  .oneitem__preview {
+    margin-top: -40px;
+    img {
+      width: 80px;
+      height: 80px;
+      box-shadow: 0 0 30px rgba(185,176,189,.5);
+    }
+  }
+
+  .oneitem__button {
+    top: 0;
+    .offers__cart {
+      width: 160px;
+      background-position: left 20px center;
+    }
+  }
+
+
+  .oneitem__review {
+    margin-top: 35px;
+    padding-top: 27px;
+    border-top: 1px solid @grey;
+    .title--subsubtitle {
+      padding-bottom: 30px;
+    }
+  }
+
+  .oneitem__reviewbtn {
+    width: auto;
+    position: absolute;
+    top: 24px;
+    right: 8px;
+    display: block;
+  }
+}
+
+@media @desktop {
+  .oneitem__offers {
+    .offers__text {
+      width: 425px;
+    }
+    .offers__nav {
+      width: 425px;
+    }
+    .offers__info {
+      width: 215px;
+    }
+  }
+}

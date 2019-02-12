@@ -1,0 +1,241 @@
+.nav {
+  position: relative;
+}
+
+.nav__list {
+  position: absolute;
+  z-index: 20;
+  top: 48px;
+  left: -67px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-radius: 5px;
+  width: 305px;
+  box-shadow: 0 0 30px rgba(185,176,189,0.5);
+}
+
+.nav__item {
+  background-color: @white;
+  color: @black;
+  position: relative;
+  display: block;
+  font-weight: normal;
+  font-family: "Intro";
+  font-style: normal;
+  padding: 15px 45px;
+  border-bottom: 1px solid @grey;
+  text-transform: uppercase;
+  &--sub::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 16px;
+    top: 16px;
+    right: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/strl-menu.png");
+    transform: rotate(90deg);
+  }
+  a {
+    color: @black;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  &--subopen {
+    background-color: @blue;
+    a {
+      color: @white;
+    }
+  }
+  &--subopen::after {
+    // content: "";
+    transform: rotate(-90deg);
+  }
+  &:first-child{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  &:last-child {
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+
+.nav__item:hover {
+  background-color: @blue;
+  a {
+    color: @white;
+  }
+}
+
+.nav__item--sub:hover {
+  a {
+    color: @black;
+  }
+}
+.nav__sublist {
+  position: absolute;
+  z-index: 25;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: -45px;
+  width: 305px;
+  margin-top: 16px;
+  box-shadow: 0 0 30px rgba(185,176,189,0.5);
+}
+
+.nav__subitem {
+  background-color: @white;
+  color: @black;
+  position: relative;
+  display: block;
+  font-weight: normal;
+  font-family: "Intro";
+  font-style: normal;
+  padding: 12px 45px;
+  border-bottom: 1px solid @grey;
+  text-transform: uppercase;
+  &:hover::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 16px;
+    top: 14px;
+    right: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/strl-menu.png");
+  }
+  a {
+    color: @black;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  &:last-child {
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.nav__subitem:hover {
+  background-color: @blue;
+  a {
+    color: @white;
+  }
+}
+
+.nav__item--subclose .nav__sublist {
+  display: none;
+}
+
+.nav__item--subopen .nav__sublist {
+  display: block;
+}
+
+.nav__button {
+  position: relative;
+  padding: 0;
+  top: 24px;
+  left: 0;
+  border: none;
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: @purple;
+    width: 16px;
+    height: 2px;
+    box-shadow: 0 7px 0 0 @purple, 0 14px 0 0 @purple;
+  }
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+
+
+.nav--closed .nav__list {
+  display: none;
+}
+
+.nav--opened .nav__list {
+  display: block;
+}
+
+@media @desktop {
+  .nav {
+    order: 2;
+    flex-grow: 1;
+    border-top: 1px solid @grey;
+  }
+
+  .nav--closed .nav__list {
+    display: flex;
+  }
+
+  .nav__list {
+    position: static;
+    width: auto;
+    box-shadow: none;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 10px;
+  }
+
+
+
+  .nav__item {
+    position: relative;
+    display: inline-block;
+    border: none;
+    padding: 15px 30px;
+    &--sub::after {
+      background-image: none;
+    }
+    &:hover {
+      background-color: @white;
+      box-shadow: 0 0 30px rgba(185,176,189,0.5);
+      border-radius: 5px;
+      a {
+        color: @blue;
+      }
+
+    }
+  }
+  .nav__item--hidden {
+    display: none;
+  }
+
+  // .nav__item--sub:hover {
+  //   border-bottom: 1px solid @grey;
+  //   border-bottom-left-radius: none;
+  //   border-bottom-right-radius: none;
+  //
+  // }
+
+
+
+  // .nav__item:hover .nav__sublist {
+  //   display: block;
+  //   position: absolute;
+  //   width: 100%;
+  // }
+
+  .nav__button {
+    display: none;
+  }
+
+
+
+}

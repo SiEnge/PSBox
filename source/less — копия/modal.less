@@ -1,0 +1,131 @@
+
+.modal__invite {
+  display: none;
+  // position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 580px;
+  z-index: 200;
+  margin-left: -260px;
+  margin-top: -100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  color: @black;
+  background-color: @white;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  border-radius: 5px;
+  &::after {
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 16px;
+    right: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/ic-vop.png");
+  }
+}
+
+.modal__title {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  font-style: normal;
+  font-family: "Intro";
+  font-weight: normal;
+  font-size: 20px;
+  color: @purple;
+  border-bottom: 1px solid @grey;
+}
+
+.modal__text {
+  margin: 0;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-size: 16px;
+  padding-bottom: 25px;
+}
+
+.modal__addtocart {
+  display: none;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(45deg, #922299 40%,#1b529b 100%);
+  text-align: center;
+  .modal__text {
+    color: @white;
+    font-size: 16px;
+    display: inline-block;
+  }
+
+}
+
+.modal__addtocart--active {
+  display: block;
+}
+
+.modal__wrap {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/ic-inf-w.png");
+  }
+}
+
+.modal__button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.modal__button--cancel {
+  color: @white;
+  border-bottom: 1px dashed @white;
+}
+
+.modal__button--close {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/ic-clouse.png");
+}
+
+@media @tablet {
+  .modal__addtocart {
+    padding-top: 20px;
+    // padding-bottom: 20px;
+    .modal__text {
+      padding-bottom: 15px;
+    }
+
+  }
+
+}
+
+@media @desktop {
+  .modal__addtocart {
+    padding-top: 30px;
+    .modal__text {
+      font-size: 18px;
+    }
+  }
+
+}

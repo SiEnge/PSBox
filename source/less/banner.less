@@ -1,0 +1,95 @@
+.banner {
+  padding-top: 10px;
+}
+
+.banner__wrap {
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 14px 18px 20px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #922299 40%,#1b529b 100%);
+}
+
+.banner__title {
+  font-family: "Intro-inline", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 24px;
+  min-height: 70px;
+  margin: 0 0 10px;
+  color: @white;
+}
+
+.banner__picture {
+  display: none;
+}
+
+.banner__button {
+  padding: 12px 26px;
+  color: @white;
+  border-width: 1px;
+
+  &:hover {
+    color: @black;
+    background: @white;
+  }
+}
+
+@media @tablet {
+  .banner {
+    padding-top: 7px;
+  }
+
+  .banner__wrap {
+    position: relative;
+    margin-right: 8px;
+    margin-left: 0;
+    padding-top: 17px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+  }
+
+  .banner__picture {
+    display: block;
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    background-repeat: no-repeat;
+    &--nonstandart {
+      width: 56px;
+      height: 71px;
+    }
+    &--dontknow {
+      width: 65px;
+      height: 71px;
+    }
+  }
+
+  .banner__title {
+    font-size: 23px;
+    line-height: 30px;
+    min-height: 60px;
+    margin-bottom: 19px;
+  }
+}
+
+@media @desktop {
+  .banner {
+    width: 420px;
+    padding-top: 25px;
+  }
+
+  .banner__wrap {
+    padding-left: 22px;
+  }
+
+  .banner__picture {
+    right: 26px;
+    bottom: 26px;
+  }
+
+  .banner__title {
+    min-height: 140px;
+  }
+}

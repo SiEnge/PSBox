@@ -1,0 +1,285 @@
+.pop {
+  position: absolute;
+  z-index: 400;
+  top: 60px;
+  right: 0;
+  display: none;
+  width: 300px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  background-color: @white;
+  box-shadow: 0 0 30px rgba(185,176,189,.5);
+  &::after {
+    position: absolute;
+    top: -17px;
+    right: 17px;
+    content: "";
+    border: 7px solid transparent;
+    border-bottom: 10px solid @white;
+  }
+}
+
+.pop--active {
+  display: block;
+}
+
+.pop__title {
+  font-family: "Intro", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  color: @purple;
+}
+
+.pop__link {
+  font-size: 16px;
+  padding: 0;
+  cursor: pointer;
+  color: @black;
+  border: none;
+  border-bottom: 1px dashed @black;
+  background-color: transparent;
+}
+
+.pop__text {
+  font-size: 16px;
+  margin: 0;
+}
+
+.pop__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pop__input {
+  display: block;
+  box-sizing: border-box;
+  width: 260px;
+  height: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: @light-grey;
+}
+
+.pop__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  &--trash {
+    background-image: url("../img/ic-del-tov.png");
+    background-size: 12px 15px;
+  }
+  &--ques {
+    background-image: url("../img/ic-vop.png");
+    background-size: 16px 16px;
+  }
+  &--compare {
+    background-image: url("../img/heart_violet.svg");
+    background-size: 16px 15px;
+  }
+  &--compare-active {
+    background-image: url("../img/heart_violet_full.svg");
+  }
+}
+
+.pop__item {
+  position: relative;
+  display: flex;
+  padding: 10px 55px 10px 10px;
+  text-decoration: none;
+  color: @black;
+  justify-content: space-between;
+  align-items: center;
+  &:last-child {
+    border-bottom: 1px solid @grey;
+  }
+}
+
+.pop__item-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  img {
+    width: 64px;
+    height: 60px;
+    border-radius: 5px;
+  }
+}
+
+.pop__item:hover {
+  color: @white;
+  background-color: @blue;
+  .pop__item-wrap::after,
+  .pop__item-wrap::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 60px;
+    content: "";
+  }
+  .pop__item-wrap::before {
+    cursor: pointer;
+    opacity: 0.5;
+    border-radius: 5px;
+    background-color: @black;
+  }
+  .pop__item-wrap::after {
+    background-image: url("../img/zoom.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+  }
+  .pop__icon--compare {
+    background-image: url("../img/heart_white.svg");
+  }
+  .pop__icon--trash {
+    background-image: url("../img/ic-del-tov-w.png");
+  }
+}
+
+.pop__button {
+  font-family: "Intro", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: @white;
+  border: none;
+  border-radius: 5px;
+  background-color: @violet;
+}
+
+.pop__wrap {
+  display: flex;
+  padding: 20px 50px 10px 20px;
+  border-bottom: 1px solid @grey;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pop__info {
+  font-size: 16px;
+  margin: 0;
+  padding: 15px 20px;
+}
+
+.pop__price {
+  margin: 0;
+}
+
+.pop__total-wrap {
+  padding: 10px 20px;
+  text-align: right;
+}
+
+.pop__total {
+  font-size: 22px;
+  margin: 0;
+}
+
+.pop__add {
+  font-size: 16px;
+  margin: 0;
+}
+
+.pop__button {
+  font-family: "Intro", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  width: 200px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: @white;
+  border: none;
+  border-radius: 5px;
+  background-color: @violet;
+}
+
+.pop__comment {
+  font-size: 14px;
+  position: relative;
+  margin: 0;
+  padding: 10px 50px 10px 55px;
+  &:before {
+    position: absolute;
+    top: 18px;
+    left: 25px;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    content: "";
+    border: none;
+    background-color: transparent;
+    background-image: url("../img/ic-inf.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media @tablet {
+  .pop {
+    width: 400px;
+    &::after {
+      right: 26px;
+    }
+  }
+
+  .pop__item {
+    padding-right: 76px;
+    padding-left: 23px;
+  }
+
+  .pop__input {
+    width: 360px;
+  }
+}
+
+@media @desktop {
+  .pop {
+    width: 520px;
+    &::after {
+      right: 51px;
+    }
+  }
+
+  .pop__comment {
+    padding-right: 110px;
+    padding-left: 65px;
+  }
+
+  .pop__item {
+    padding-right: 86px;
+    padding-left: 23px;
+  }
+
+  .pop__title {
+    font-size: 20px;
+  }
+
+  .pop__button {
+    font-size: 14px;
+  }
+
+  .pop__item {
+    padding-right: 80px;
+    padding-left: 20px;
+  }
+}

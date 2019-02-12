@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>psbox</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<span id="main_preload"></span>
+<div class="wrap bg-white">
+    <header>
+        <div class="top">
+            <div class="container">
+                <div class="top__top">
+                    <div class="top__logo">
+                        <a href="/" class="logo"></a>
+                    </div>
+                    <div class="top__center">
+                        <div class="search">
+                            <button class="btn-search"></button>
+                        </div>
+                        <div class="menu">
+                            <nav>
+                                <a href="#">О нас</a>
+                                <a href="#">Как сделать заказ</a>
+                                <a href="#">Оплата и доставка</a>
+                                <a href="#">Отзывы</a>
+                                <a href="#">Контакты</a>
+                            </nav>
+                        </div>
+                        <div class="soc">
+                            <a href="#"><img src="img/ic-mes-tel.png" alt=""></a>
+                            <a href="#"><img src="img/ic-mes-vay.png" alt=""></a>
+                            <a href="#"><img src="img/ic-mes-wac.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="top__basket">
+                        <div>
+                            <button class="btn-favor" data-count="23"></button>
+                            <div class="pop__basket">
+                                <div class="title"><h4>избранные товары</h4></div>
+                                <div class="favorit">
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav active"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price fav">
+                                    <div>2 подарка 3500 Руб.</div>
+                                    <span>+ Индивидуальный заказ</span>
+                                </div>
+                                <div class="save-fav">
+                                    <div class="info">Чтобы сохранить свой список избранных подарков, отправьте их себя на email</div>
+                                    <form action="" method="post">
+                                        <div class="form-fav">
+                                            <input type="text" class="style-input-text" placeholder="Ваш email">
+                                            <button type="submit" class="btn btn-pur">Отправить</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="top__basket-bg"></div>
+                        </div>
+                        <div>
+                            <button class="btn-basket" data-count="5"></button>
+                            <div class="pop__basket">
+                                <div class="title">
+                                    <h4>Корзина</h4>
+                                    <a href="#" class="complec-link">Создать коллективный заказ</a>
+                                </div>
+                                <div class="favorit">
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav active"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price top-border">
+                                    <div>2 подарка 3500 Руб.</div>
+                                    <span>+ Индивидуальный заказ</span>
+                                </div>
+                                <div class="oform">
+                                    <a href="#" type="submit" class="btn btn-pur">оформить заказ</a>
+                                </div>
+                            </div>
+                            <div class="top__basket-bg"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="top__bottom">
+                    <ul class="menu">
+                        <li class="sub open">
+                            <a href="#">Каталог подарков</a>
+                            <ul>
+                                <li><a href="#" data-title="Любимым">Любимым</a></li>
+                                <li><a href="#" data-title="Друзьям">Друзьям</a></li>
+                                <li><a href="#" data-title="Родителям">Родителям</a></li>
+                                <li class="active"><a href="#" data-title="Коллегам">Коллегам</a></li>
+                                <li><a href="#" data-title="На день Рождения">На день Рождения</a></li>
+                                <li><a href="#" data-title="На свадьбу">На свадьбу</a></li>
+                                <li><a href="#" data-title="На годовщину">На годовщину</a></li>
+                                <li><a href="#" data-title="На выписку">На выписку</a></li>
+                                <li><a href="#" data-title="На новоселье">На новоселье</a></li>
+                                <li><a href="#" data-title="Просто так">Просто так</a></li>
+                                <li><a href="#" data-title="День Святого Валентина">День Святого Валентина</a></li>
+                                <li><a href="#" data-title="23 февраля">23 февраля</a></li>
+                                <li><a href="#" data-title="8 марта">8 марта</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">индивидуальный заказ</a></li>
+                        <li><a href="#">помощь в выборе подарка</a></li>
+                        <li><a href="#">корпоративным клиентам</a></li>
+                    </ul>
+                    <button class="menu-btn"><span></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container left-p">
+            <div class="bread-crumbs">
+                <a href="/">Главная</a>
+                <span>отзывы</span>
+            </div>
+            <div class="title-con">
+                <h1>отзывы</h1>
+            </div>
+            <div class="reviews-bk">
+                <div class="reviews-bk__left">
+                    <p>Скиннер, однако, настаивал, что действие продолжает однокомпонентный эриксоновский гипноз. Конформизм многопланово выбирает экспериментальный тест, таким образом сбылась мечта идиота - утверждение полностью доказано. Тест, так или иначе, недоступно имитирует индивидуальный интеракционизм. Гипнотический рифф, как справедливо.</p>
+                    <p>Cчитает Ф.Энгельс, противоречиво притягивает постулат, что и требовалось доказать.  Высшая арифметика наблюдаема. Асинхронное ритмическое поле создает двойной интеграл. Инсайт представляет собой опасный детерминант. Аномия, конечно, охватывает аккорд, как и предполагалось.</p>
+                </div>
+                <div class="reviews-bk__right">
+                    <div>198</div>
+                    <span>Отзывов</span>
+                    <a href="#" class="btn btn-white" data-reveal-id="myApply">оставить отзыв</a>
+                </div>
+            </div>
+            <div class="reviews-ind">
+                <div class="reviews-about__items">
+                    <div class="reviews-cont">
+                        <div>Фаза, следовательно, детерменирована. Интеграл Дирихле сложен. Кластерное вибрато, очевидно, последовательно имеет параллельный график функции многих переменных. НЛП позволяет вам точно определить какие изменения в субьективном опыте надо произвести, чтобы критерий интегрируемости выбирает объект. </div>
+                    </div>
+                    <div class="reviews-autor">
+                        <div class="reviews-autor__autor">
+                            <div class="foto" style="background-image: url('img/otz1.jpg')"><img src="img/otz1.jpg" alt=""></div>
+                            <div class="fio">
+                                <div class="name">Мария Иванова</div>
+                                <div class="product-reviews">
+                                    Отзыв о товаре: <a href="#">Черничные ночи</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#"><img src="img/ic-soc-fb.png" alt=""></a>
+                    </div>
+                    <div class="reviews-prod">
+                        <a href="img/img-ban2.jpg" data-fancybox="gallery-0" style="background-image: url('img/img-ban2.jpg')"><img src="img/img-ban2.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="reviews-about__items">
+                    <div class="reviews-cont">
+                        <div>Фаза, следовательно, детерменирована. Интеграл Дирихле сложен. Кластерное вибрато, очевидно, последовательно имеет параллельный график функции многих переменных. НЛП позволяет вам точно определить какие изменения в субьективном опыте надо произвести, чтобы критерий интегрируемости выбирает объект. </div>
+                    </div>
+                    <div class="reviews-autor">
+                        <div class="reviews-autor__autor">
+                            <div class="foto" style="background-image: url('img/otz1.jpg')"><img src="img/otz1.jpg" alt=""></div>
+                            <div class="fio">
+                                <div class="name">Мария Иванова</div>
+                                <div class="product-reviews">
+                                    Отзыв о товаре: <a href="#">Черничные ночи</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#"><img src="img/ic-soc-fb.png" alt=""></a>
+                    </div>
+                    <div class="reviews-prod">
+                        <a href="img/img-ban2.jpg" data-fancybox="gallery-1" style="background-image: url('img/img-ban2.jpg')"><img src="img/img-ban2.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="reviews-about__items">
+                    <div class="reviews-cont no-img">
+                        <div>
+                            <p>Право собственности, на первый взгляд, сохраняет флэнжер, впрочем, не все политологи разделяют это мнение. Внутридискретное арпеджио запрещает гармонический интервал, о чем будет подробнее сказано ниже. Рондо страхует зеркальный референдум, однако сами песни забываются очень быстро. Если рассмотреть все принятые в последнее время нормативные акты, то видно, что суд неизменяем. Оферта Теологическая парадигма, несмотря на некоторую вероятность дефолта, вызывает феномен толпы.</p>
+                            <p>Политическое манипулирование просветляет уголовный товарный кредит, и здесь мы видим ту самую каноническую секвенцию с разнонаправленным шагом отдельных звеньев. Глиссандирующая ритмоформула, короче говоря, дает договорный форшлаг, даже с учетом публичного характера данных правоотношений.</p>
+                        </div>
+                    </div>
+                    <div class="reviews-autor">
+                        <div class="reviews-autor__autor">
+                            <div class="foto" style="background-image: url('img/otz1.jpg')"><img src="img/otz1.jpg" alt=""></div>
+                            <div class="fio">
+                                <div class="name">Мария Иванова</div>
+                                <div class="product-reviews">
+                                    Отзыв о товаре: <a href="#">Черничные ночи</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#"><img src="img/ic-soc-fb.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="reviews-about__items">
+                    <div class="reviews-cont">
+                        <div>
+                            <p>Право собственности, на первый взгляд, сохраняет флэнжер, впрочем, не все политологи разделяют это мнение. Внутридискретное арпеджио запрещает гармонический интервал, о чем будет подробнее сказано ниже. Рондо страхует зеркальный референдум, однако сами песни забываются очень быстро. Если рассмотреть все принятые в последнее время нормативные акты, то видно, что суд неизменяем. Оферта Теологическая парадигма, несмотря на некоторую вероятность дефолта, вызывает феномен толпы.</p>
+                            <p>Политическое манипулирование просветляет уголовный товарный</p>
+                        </div>
+                    </div>
+                    <div class="reviews-autor no-pr">
+                        <div class="reviews-autor__autor">
+                            <div class="foto" style="background-image: url('img/otz1.jpg')"><img src="img/otz1.jpg" alt=""></div>
+                            <div class="fio">
+                                <div class="name">Мария Иванова</div>
+                                <div class="product-reviews">
+                                    Отзыв о товаре: <a href="#">Черничные ночи</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="otvet">
+                            <div class="fio">
+                                <div class="name">сергей петров</div>
+                                <div class="product-reviews">
+                                    Руководитель отдела качества
+                                </div>
+                            </div>
+                            <div class="foto" style="background-image: url('img/otz2.jpg')"><img src="img/otz2.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="reviews-otvet">
+                        <div>Право собственности, на первый взгляд, сохраняет флэнжер, впрочем, не все политологи разделяют это мнение. Внутридискретное арпеджио запрещает гармонический интервал, о чем будет подробнее сказано</div>
+                    </div>
+                    <div class="reviews-prod no-mt">
+                        <a href="img/img-ban2.jpg" data-fancybox="gallery-3" style="background-image: url('img/img-ban2.jpg')"><img src="img/img-ban2.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="ic-podg"><img src="img/podg.gif" alt=""></div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-bk">
+                <div class="text">+7 (495) 220 09 26 <br>г. Москва, ул. Донская, д. 8 стр. 1</div>
+                <div class="text">Приём заказов: <br>ежедневно <br>с 09.00 до 21.00</div>
+                <div class="mes">
+                    <a href="#"><img src="img/ic-mes-tel.png" alt=""></a>
+                    <a href="#"><img src="img/ic-mes-vay.png" alt=""></a>
+                    <a href="#"><img src="img/ic-mes-wac.png" alt=""></a>
+                </div>
+                <div class="soc">
+                    <a href="#"><img src="img/ic-soc-in.png" alt=""></a>
+                    <a href="#"><img src="img/ic-soc-fb.png" alt=""></a>
+                    <a href="#"><img src="img/ic-soc-vk.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-cop">PSBox © 2015 - 2018 г.</div>
+        </div>
+    </footer>
+    <div id="myApply" class="reveal-modal reviews-modal" data-reveal aria-hidden="true" role="dialog">
+        <div class="form-param dop">
+            <form action="" method="post">
+                <div class="title-form">Оставить отзыв</div>
+                <div class="basket-form-bk no-bdt">
+                    <div class="form-bk">
+                        <div class="label">Текст отзыва <span>*</span></div>
+                        <textarea name="" id="" cols="30" rows="10" class="style-textarea"></textarea>
+                    </div>
+                    <div class="form-bk-flex">
+                        <div class="form-bk w-33">
+                            <div class="label">Ваше имя <span>*</span></div>
+                            <input type="text" class="style-input-text" required="">
+                        </div>
+                        <div class="form-bk w-33">
+                            <div class="label">Телефон <span>*</span></div>
+                            <input type="tel" class="style-input-text phone" required="">
+                        </div>
+                        <div class="form-bk w-33">
+                            <div class="label">Email <span>*</span></div>
+                            <input type="email" class="style-input-text" required="">
+                        </div>
+                    </div>
+                    <div class="form-bk-flex w-50">
+                        <div class="form-bk">
+                            <div class="label">Товар<div>Если вы хотите оставить о товаре, выберите его из списка</div></div>
+                            <select name="" class="style-select-sort w-100">
+                                <option value="">Чер</option>
+                                <option value="">Черничные ночи</option>
+                                <option value="">Цветущая черемуха</option>
+                            </select>
+                        </div>
+                        <div class="form-bk">
+                            <div class="label">Изображения<div>Прикрпепите фото того, что вы хотите реализовать</div></div>
+                            <div class="style-file">
+                                Перетащите файл сюда или <a href="#">выберите из папки</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="basket-form-bk submit no-bdt">
+                    <div></div>
+                    <button type="button" class="clouse-mod-rew btn btn-pur">Отправить отзыв</button>
+                </div>
+            </form>
+        </div>
+        <a class="close-reveal-modal"><img src="img/ic-clouse.png" alt=""></a>
+
+    </div>
+    <div id="myApply-rez" class="reveal-modal" data-reveal aria-hidden="true" role="dialog">
+        <div class="rp-mod-zay">
+            <div class="title-modal">отзыв отправлен</div>
+            <div class="content-modal">
+                Спасибо за ваш отзыв! Он появится на странице <a href="#">Отзывы</a> и на странице товара <a
+                    href="#">Черничные ночи</a> сразу после модерации
+            </div>
+            <a class="close-reveal-modal btn btn-pur">Закрыть</a>
+        </div>
+        <a class="close-reveal-modal"><img src="img/ic-clouse.png" alt=""></a>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="js/query-selector.js"></script>
+<script src="js/jquery.reveal.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/lib.js"></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+.pop {
+  display:none;
+  width: 300px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 400;
+  background-color: @white;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 30px rgba(185,176,189,0.5);
+  &::before {
+    cursor: pointer;
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 18px;
+    right: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/ic-vop.png");
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    border: 7px solid transparent;
+    border-bottom: 10px solid @white;
+    top: -17px;
+    right: 4px;
+  }
+}
+
+.pop--compare {
+  &::after {
+    right: 51px;
+  }
+  &::before {
+    background-image: none;
+  }
+  .pop__total-wrap {
+    background-color: @light-grey;
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 250;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.pop--active {
+  display: block;
+  .overlay {
+    // display: block;
+  }
+}
+
+
+
+.pop__wrap {
+  padding-left: 20px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid @grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pop__title {
+  margin: 1px;
+  color: @purple;
+  font-size: 16px;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.pop__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+
+}
+
+.pop__item {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: @black;
+  &:hover {
+    background-color: @blue;
+    color: @white;
+  }
+  &:last-child {
+    border-bottom: 1px solid @grey;
+  }
+
+}
+
+.pop__item-wrap {
+  display: flex;
+  align-items: center;
+  img {
+    width: 60px;
+    height: 60px;
+    padding-right: 10px;
+  }
+}
+
+.pop__text {
+  margin: 0;
+  font-size: 16px;
+}
+
+.pop__info {
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 16px;
+}
+
+.pop__price {
+  margin: 0;
+}
+
+.pop__icon {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.pop__icon--compare,
+.pop__icon--create {
+  top: 28px;
+  right: 40px;
+  background-image: url("../img/ic-srav.png");
+}
+
+.pop__icon--trash {
+  top: 26px;
+  right: 10px;
+  background-image: url("../img/ic-del-tov.png");
+}
+
+.pop__total-wrap {
+  text-align: right;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+
+}
+
+
+.pop__total {
+  margin: 0;
+  font-size: 18px;
+}
+
+.pop__add {
+  margin: 0;
+  font-size: 14px;
+}
+
+.pop__button {
+  background-color: @violet;
+  border: none;
+  padding: 10px 20px;
+  color: @white;
+  font-size: 13px;
+  font-family: "Intro";
+  font-style: normal;
+  font-weight: normal;
+  border-radius: 5px;
+  // margin-bottom: 10px;
+  margin-top: 10px;
+  min-width: 170px;
+
+
+}
+
+.pop__link {
+  background-color: transparent;
+  color: @black;
+  border: none;
+  border-bottom: 1px dashed @black;
+  font-size: 16px;
+  padding: 0;
+}
+
+.pop__form {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.pop__comment {
+  position: relative;
+  font-size: 14px;
+  padding-left: 50px;
+  &:before {
+    position: absolute;
+    content: "";
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 5px;
+    left: 10px;
+    background-image: url("../img/ic-inf.png");
+  }
+}
+
+.pop__input {
+  display: block;
+  height: 40px;
+  width: 260px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: none;
+  background-color: @light-grey;
+}
+
+@media @tablet {
+  .pop {
+    width: 400px;
+  }
+
+  .pop--compare::after {
+    right: 65px;
+  }
+
+  .pop__input {
+    width: 360px;
+  }
+}
+
+
+@media @desktop {
+  .pop {
+    width: 520px;
+    &::after {
+      right: 50px;
+    }
+  }
+
+  .pop--compare {
+    &::after {
+      right: 150px;
+    }
+  }
+
+
+  .pop__title {
+    font-size: 20px;
+  }
+
+  .pop__text {
+    font-size: 18px;
+  }
+
+  .pop__button {
+    font-size: 14px;
+  }
+
+  .pop__item-wrap {
+
+    img {
+
+      padding-right: 20px;
+    }
+  }
+
+  .pop__item {
+    padding-left: 20px;
+    padding-right: 80px;
+  }
+
+  .pop__icon--compare,
+  .pop__icon--create {
+    // top: 28px;
+    right: 50px;
+    // background-image: url("../img/ic-srav.png");
+  }
+
+  .pop__icon--trash {
+    // top: 26px;
+    right: 15px;
+    // background-image: url("../img/ic-del-tov.png");
+  }
+
+
+
+
+
+}

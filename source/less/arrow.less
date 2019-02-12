@@ -1,0 +1,33 @@
+.arrow {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid @grey;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  &--left {
+    transform: rotate(180deg);
+    right: 39px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: -1px;
+    background-repeat: no-repeat;
+    background-size: 8px 16px;
+    background-position: center;
+    background-image: url("../img/slid-m-r.png");
+  }
+}
+
+.arrow--active::before {
+  background-image: url("../img/slid-m-r-a.png");
+}

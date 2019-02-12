@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>psbox</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<span id="main_preload"></span>
+<div class="wrap bg-white">
+    <header>
+        <div class="top">
+            <div class="container">
+                <div class="top__top">
+                    <div class="top__logo">
+                        <a href="/" class="logo"></a>
+                    </div>
+                    <div class="top__center">
+                        <div class="search">
+                            <button class="btn-search"></button>
+                        </div>
+                        <div class="menu">
+                            <nav>
+                                <a href="#">О нас</a>
+                                <a href="#">Как сделать заказ</a>
+                                <a href="#">Оплата и доставка</a>
+                                <a href="#">Отзывы</a>
+                                <a href="#">Контакты</a>
+                            </nav>
+                        </div>
+                        <div class="soc">
+                            <a href="#"><img src="img/ic-mes-tel.png" alt=""></a>
+                            <a href="#"><img src="img/ic-mes-vay.png" alt=""></a>
+                            <a href="#"><img src="img/ic-mes-wac.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="top__basket">
+                        <div>
+                            <button class="btn-favor" data-count="23"></button>
+                            <div class="pop__basket">
+                                <div class="title"><h4>избранные товары</h4></div>
+                                <div class="favorit">
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav active"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price fav">
+                                    <div>2 подарка 3500 Руб.</div>
+                                    <span>+ Индивидуальный заказ</span>
+                                </div>
+                                <div class="save-fav">
+                                    <div class="info">Чтобы сохранить свой список избранных подарков, отправьте их себя на email</div>
+                                    <form action="" method="post">
+                                        <div class="form-fav">
+                                            <input type="text" class="style-input-text" placeholder="Ваш email">
+                                            <button type="submit" class="btn btn-pur">Отправить</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="top__basket-bg"></div>
+                        </div>
+                        <div>
+                            <button class="btn-basket" data-count="5"></button>
+                            <div class="pop__basket">
+                                <div class="title">
+                                    <h4>Корзина</h4>
+                                    <a href="#" class="complec-link">Создать коллективный заказ</a>
+                                </div>
+                                <div class="favorit">
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav active"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price top-border">
+                                    <div>2 подарка 3500 Руб.</div>
+                                    <span>+ Индивидуальный заказ</span>
+                                </div>
+                                <div class="oform">
+                                    <a href="#" type="submit" class="btn btn-pur">оформить заказ</a>
+                                </div>
+                            </div>
+                            <div class="top__basket-bg"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="top__bottom">
+                    <ul class="menu">
+                        <li class="sub open">
+                            <a href="#">Каталог подарков</a>
+                            <ul>
+                                <li><a href="#" data-title="Любимым">Любимым</a></li>
+                                <li><a href="#" data-title="Друзьям">Друзьям</a></li>
+                                <li><a href="#" data-title="Родителям">Родителям</a></li>
+                                <li><a href="#" data-title="Коллегам">Коллегам</a></li>
+                                <li><a href="#" data-title="На день Рождения">На день Рождения</a></li>
+                                <li><a href="#" data-title="На свадьбу">На свадьбу</a></li>
+                                <li><a href="#" data-title="На годовщину">На годовщину</a></li>
+                                <li><a href="#" data-title="На выписку">На выписку</a></li>
+                                <li><a href="#" data-title="На новоселье">На новоселье</a></li>
+                                <li><a href="#" data-title="Просто так">Просто так</a></li>
+                                <li><a href="#" data-title="День Святого Валентина">День Святого Валентина</a></li>
+                                <li><a href="#" data-title="23 февраля">23 февраля</a></li>
+                                <li><a href="#" data-title="8 марта">8 марта</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">индивидуальный заказ</a></li>
+                        <li><a href="#">помощь в выборе подарка</a></li>
+                        <li><a href="#">корпоративным клиентам</a></li>
+                    </ul>
+                    <button class="menu-btn"><span></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container left-p">
+            <div class="bread-crumbs">
+                <a href="/">Главная</a>
+                <span>Корзина</span>
+            </div>
+            <div class="title-con">
+                <h1>Корзина</h1>
+            </div>
+            <div class="best-product">
+                <div class="best-product__img">
+                    <a class="active" href="img/gal-0-1.jpg" data-fancybox="gallery-1" style="background-image: url('img/gal-0-1.jpg')"><img src="img/gal-0-1.jpg" alt=""></a>
+                    <a href="img/gal-0-2.jpg" data-fancybox="gallery-1" style="background-image: url('img/gal-0-2.jpg')"><img src="img/gal-0-2.jpg" alt=""></a>
+                    <a href="img/gal-0-3.jpg" data-fancybox="gallery-1" style="background-image: url('img/gal-0-3.jpg')"><img src="img/gal-0-3.jpg" alt=""></a>
+                </div>
+                <div class="best-product__cont">
+                    <div class="title__bk">
+                        <div class="title__l">
+                            <a href="#">Черничные ночи</a>
+                            <span><span>3750 Руб.</span>1 450 Руб.</span>
+                        </div>
+                        <div class="title__r">
+                            <a href="#" class="like"></a>
+                            <a href="#" class="btn btn-card">В корзину</a>
+                        </div>
+                    </div>
+                    <p>Надпись на заказ из шоколадных конфет со сливочной начинкой;</p>
+                    <p>Шоколад:</p>
+                    <ul>
+                        <li>«Ritter sport» черника со сливками,</li>
+                        <li>«Ты моя ягодка» молочный,</li>
+                    </ul>
+                    <p>Алкоголь (по 50 мл.):</p>
+                    <ul>
+                        <li>Черничный ликёр «Remedia Blueberry Liqueur Liviko Store»,</li>
+                        <li>Виски «McClelland’s Highland».</li>
+                    </ul>
+                    <h5>Товар в разделах каталога:</h5>
+                    <div class="categ-a">
+                        <a href="#">Любимым</a>
+                        <a href="#">на день рождения</a>
+                        <a href="#">на годовщину</a>
+                        <a href="#">просто так</a>
+                    </div>
+                </div>
+            </div>
+            <div class="best-product">
+                <div class="best-product__img">
+                    <a class="active" href="img/gal-0-1.jpg" data-fancybox="gallery-2" style="background-image: url('img/gal-0-1.jpg')"><img src="img/gal-0-1.jpg" alt=""></a>
+                    <a href="img/gal-0-2.jpg" data-fancybox="gallery-2" style="background-image: url('img/gal-0-2.jpg')"><img src="img/gal-0-2.jpg" alt=""></a>
+                    <a href="img/gal-0-3.jpg" data-fancybox="gallery-2" style="background-image: url('img/gal-0-3.jpg')"><img src="img/gal-0-3.jpg" alt=""></a>
+                </div>
+                <div class="best-product__cont">
+                    <div class="title__bk">
+                        <div class="title__l">
+                            <a href="#">Черничные ночи</a>
+                            <span>1 450 Руб.</span>
+                        </div>
+                        <div class="title__r">
+                            <a href="#" class="like"></a>
+                            <a href="#" class="btn btn-card">В корзину</a>
+                        </div>
+                    </div>
+                    <p>Надпись на заказ из шоколадных конфет со сливочной начинкой;</p>
+                    <p>Шоколад:</p>
+                    <ul>
+                        <li>«Ritter sport» черника со сливками,</li>
+                        <li>«Ты моя ягодка» молочный,</li>
+                    </ul>
+                    <p>Алкоголь (по 50 мл.):</p>
+                    <ul>
+                        <li>Черничный ликёр «Remedia Blueberry Liqueur Liviko Store»,</li>
+                        <li>Виски «McClelland’s Highland».</li>
+                    </ul>
+                    <h5>Товар в разделах каталога:</h5>
+                    <div class="categ-a">
+                        <a href="#">Любимым</a>
+                        <a href="#">на день рождения</a>
+                        <a href="#">на годовщину</a>
+                        <a href="#">просто так</a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-param">
+                <form action="" method="post">
+                    <div class="basket-form-top">
+                        <div class="left">
+                            <div>Итого:</div>
+                            <span>
+                                <span>2 подарка 3500</span>
+                            </span>
+                        </div>
+                        <div class="right">
+                            <div class="info">Стоимость заказа будет уточнена на этапе финального согласования состава подарка</div>
+                            <div>
+                                <div class="title-input">Промокод</div>
+                                <input type="text" class="style-input-text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-form-bk">
+                        <div class="basket-title">Ваши пожелания:</div>
+                        <div class="form-bk">
+                            <div class="label">по подарку <a href="#">Черничные ночи</a></div>
+                            <textarea name="" cols="30" rows="10" class="style-textarea"></textarea>
+                        </div>
+                        <div class="form-bk">
+                            <div class="label">по подарку <a href="#">Земляничное утро</a></div>
+                            <textarea name="" cols="30" rows="10" class="style-textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="basket-form-bk">
+                        <div class="basket-title">Контакты</div>
+                        <div class="form-bk-flex">
+                            <div class="form-bk">
+                                <div class="label">Ваше имя <span>*</span></div>
+                                <input type="text" class="style-input-text" required>
+                            </div>
+                            <div class="form-bk">
+                                <div class="label">Телефон <span>*</span></div>
+                                <input type="tel" class="phone style-input-text" required>
+                            </div>
+                            <div class="form-bk">
+                                <div class="label">Email <span>*</span></div>
+                                <input type="email" class="style-input-text error" required>
+                            </div>
+                        </div>
+                        <div class="form-bk">
+                            <div class="label">Предпочтительный способ связи <span>*</span></div>
+                            <div class="radio-flex">
+                                <div class="radio">
+                                    <input type="radio" name="pot" id="pot1" checked>
+                                    <label for="pot1">Звонок</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="pot" id="pot2">
+                                    <label for="pot2">Email</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="pot" id="pot3">
+                                    <label for="pot3">Whats App</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="pot" id="pot4">
+                                    <label for="pot4">Viber</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="pot" id="pot5">
+                                    <label for="pot5">Telegram</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket-form-bk">
+                        <div class="basket-title">Доставка и оплата</div>
+                        <div class="form-bk">
+                            <div class="label">Способ доставки <span>*</span></div>
+                            <div class="radio-flex">
+                                <div class="radio">
+                                    <input type="radio" name="pot1" id="dos1" checked>
+                                    <label for="dos1">Самовывоз</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="pot1" id="dos2">
+                                    <label for="dos2">Курьером</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="pot1" id="dos3">
+                                    <label for="dos3">Транспортной компанией</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="pot1" id="dos4">
+                                    <label for="dos4">Почтовым отправлением</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            Адрес самовывоза: 101000 г. Москва ул.Донская д.8 стр. 1 <a href="#">посмотреть на карте</a>
+                            <br>О сроках готовности вам сообщит менеджер.
+                        </div>
+                    </div>
+                    <div class="basket-form-bk">
+                        <div class="basket-title">способ оплаты</div>
+                        <div class="form-bk">
+                            <div class="label">Способ доставки <span>*</span></div>
+                            <div class="radio-flex">
+                                <div class="radio">
+                                    <input type="radio" name="pot2" id="spos1" checked>
+                                    <label for="spos1">Наличными средствами</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="pot2" id="spos2">
+                                    <label for="spos2">Картой при получении</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="pot2" id="spos3">
+                                    <label for="spos3">Банковским переводом</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="pot2" id="spos4">
+                                    <label for="spos4">Электронными деньгами</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            Финальная стоимость будет согласована с вами <br>при подтверждении заказа менеджером
+                        </div>
+                    </div>
+                    <div class="basket-form-bk submit">
+                        <div class="error">Заполните поле: “Ваше имя”</div>
+                        <button type="submit" class="btn btn-pur" disabled="disabled">оформить заказ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-bk">
+                <div class="text">+7 (495) 220 09 26 <br>г. Москва, ул. Донская, д. 8 стр. 1</div>
+                <div class="text">Приём заказов: <br>ежедневно <br>с 09.00 до 21.00</div>
+                <div class="mes">
+                    <a href="#"><img src="img/ic-mes-tel.png" alt=""></a>
+                    <a href="#"><img src="img/ic-mes-vay.png" alt=""></a>
+                    <a href="#"><img src="img/ic-mes-wac.png" alt=""></a>
+                </div>
+                <div class="soc">
+                    <a href="#"><img src="img/ic-soc-in.png" alt=""></a>
+                    <a href="#"><img src="img/ic-soc-fb.png" alt=""></a>
+                    <a href="#"><img src="img/ic-soc-vk.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-cop">PSBox © 2015 - 2018 г.</div>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="js/query-selector.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/lib.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+.collectiveorder {
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+
+.collectiveorder__cont {
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.collectiveorder__wrap {
+  padding-top: 10px;
+}
+
+.collectiveorder__title {
+  border: none;
+}
+
+.collectiveorder__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.collectiveorder__item {
+  position: relative;
+  width: 136px;
+  padding-top: 92px;
+  padding-bottom: 10px;
+}
+
+.collectiveorder__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 136px;
+  height: 76px;
+  margin: 0;
+  border: 2px solid @violet;
+  border-radius: 5px;
+  border-image: 1 linear-gradient(45deg, #922299 40%,#1b529b 100%);
+  background-color: @white;
+  background-image: url("../img/fon-var.png");
+  background-repeat: repeat;
+  background-size: 12px 12px;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -24px;
+    margin-left: -24px;
+  }
+}
+
+.collectiveorder__lead {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.collectiveorder__itemtitle {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 16px;
+  margin: 0 0 10px;
+}
+
+.collectiveorder__itemtext {
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.collectiveorder__banner {
+  .banner__wrap {
+    position: relative;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  .banner__picture {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    display: block;
+  }
+
+  .banner__button {
+    min-width: 110px;
+  }
+}
+
+@media @tablet {
+  .collectiveorder {
+    padding-top: 17px;
+    padding-bottom: 10px;
+  }
+
+  .collectiveorder__cont {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .collectiveorder__wrap {
+    padding-top: 14px;
+    padding-bottom: 12px;
+  }
+
+  .collectiveorder__lead {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 18px;
+  }
+
+  .collectiveorder__itemtitle {
+    font-size: 24px;
+    line-height: 24px;
+    min-height: 48px;
+  }
+
+  .collectiveorder__item {
+    width: 180px;
+    padding-top: 125px;
+  }
+
+  .collectiveorder__picture {
+    width: 176px;
+    height: 99px;
+  }
+
+  .collectiveorder__itemtext {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  .collectiveorder__banner {
+    padding-bottom: 35px;
+    .banner__wrap {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .banner__title {
+      max-width: 450px;
+      min-height: auto;
+    }
+  }
+}
+@media @desktop {
+  .collectiveorder {
+    padding-top: 5px;
+    padding-bottom: 0;
+    padding-left: 20px;
+  }
+
+  .collectiveorder__item {
+    width: 200px;
+    padding-top: 115px;
+  }
+
+  .collectiveorder__picture {
+    width: 196px;
+    height: 99px;
+  }
+}

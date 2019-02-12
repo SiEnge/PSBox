@@ -1,0 +1,390 @@
+
+.review__textwrap p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 16px 5px 10px;
+}
+
+.review--hidden {
+  display: none;
+}
+
+.review__banner {
+  margin-right: 8px;
+  margin-left: 8px;
+  color: @white;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #922299 40%,#1b529b 100%);
+}
+
+.review__bannerwrap {
+  display: flex;
+  padding: 40px 8px 48px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.review__count {
+  font-family: 'Intro-inline', 'Arial', sans-serif;
+  font-size: 11px;
+  font-weight: 100;
+  font-style: normal;
+  margin: 0;
+  letter-spacing: 0.3em;
+
+  &--high {
+    // font-family: "Intro-inline", "Arial", sans-serif;
+    font-size: 56px;
+    line-height: 60px;
+    // font-weight: 100;
+    letter-spacing: 0;
+  }
+}
+
+.review__button {
+  font-size: 14px;
+  display: block;
+  width: 165px;
+  padding: 14px 5px;
+  text-align: center;
+  color: @white;
+  flex: 0 0 165px;
+  margin: 0 auto;
+
+  &:hover {
+    color: @violet;
+    background-color: @white;
+  }
+}
+
+.review__product {
+  display: none;
+  margin: 0;
+  position: relative;
+}
+
+.review__button-preview {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 240px;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../img/zoom.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 6px right 8px;
+  background-size: 24px 24px;
+}
+
+.review__list {
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-bottom: 15px;
+}
+
+.review__client {
+  position: relative;
+  padding-top: 18px;
+  blockquote {
+    margin: 0;
+  }
+}
+
+.review__anchor {
+  top: -72px;
+  position: absolute;
+}
+
+
+.review__block {
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  margin: 0;
+  padding: 15px 20px 15px 36px;
+  border: 1px solid @grey;
+  border-radius: 5px;
+  background-color: @white;
+
+  &::after,
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 30px;
+    content: '';
+    border: 10px solid transparent;
+  }
+
+  &::after {
+    z-index: 2;
+    margin-bottom: -19px;
+    border-top: 10px solid #fff;
+  }
+
+  &::before {
+    z-index: 1;
+    margin-bottom: -20px;
+    border-top: 10px solid @grey;
+  }
+  &:hover {
+    box-shadow: inset 0 0 30px rgba(185, 176, 189, 0.5);
+  }
+  &:hover:after {
+    border-top-color: @light-grey;
+  }
+}
+
+.review__text {
+  position: relative;
+  margin: 0;
+
+  &::before {
+    position: absolute;
+    width: 19px;
+    height: 16px;
+    content: '';
+    background-image: url("../img/quotes_grey.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    top: 3px;
+    left: -25px;
+  }
+  // &::after {
+  //   bottom: -10px;
+  //   right: -10px;
+  // }
+}
+
+.review__wrap {
+  position: relative;
+  display: flex;
+  padding-top: 16px;
+  // padding-right: 10px;
+  // padding-bottom: 10px;
+  padding-left: 16px;
+  align-items: center;
+}
+
+.review__img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  // margin: 0 auto;
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+
+
+.review__cite {
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+.review__name {
+  font-family: 'Intro', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  display: block;
+}
+
+.review__comment,
+.review__post {
+  font-size: 12px;
+  line-height: 12px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  color: @grey;
+}
+
+.review__link {
+  font-size: 13px;
+  line-height: 13px;
+  color: @violet;
+}
+
+.review__social {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: auto;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  cursor: pointer;
+}
+
+.review__expert {
+  blockquote {
+    margin: 0;
+  }
+  .review__wrap {
+    justify-content: flex-end;
+  }
+
+  .review__block {
+    border: 1px solid @light-grey;
+    background-color: @light-grey;
+
+    &::before {
+      top: 0;
+      right: 0;
+      bottom: auto;
+      left: auto;
+      margin: -20px 14px auto auto;
+      border: 10px solid transparent;
+      border-bottom: 10px solid @light-grey;
+    }
+    &:hover:before {
+      border-bottom-color: rgba(185, 176, 189, 0.4);
+    }
+
+    &::after {
+      border: none;
+    }
+  }
+}
+@media @tablet {
+  .review--hidden {
+    display: block;
+  }
+
+  .review__textwrap p {
+    padding-top: 7px;
+  }
+
+  .review__lead {
+    display: flex;
+    min-height: 280px;
+    padding-top: 5px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .review__banner {
+    display: block;
+    width: 272px;
+    margin-right: 0;
+    flex: 0 0 272px;
+  }
+
+  .review__bannerwrap {
+    display: block;
+    // flex-direction: column;
+    // align-items: center;
+  }
+
+  .review__count {
+    font-size: 18px;
+    padding-bottom: 14px;
+
+    &--high {
+      font-size: 94px;
+      line-height: 94px;
+    }
+  }
+
+  // .review__button {
+  //   flex: 0 0 auto;
+  // }
+
+  .review__client {
+    min-height: 220px;
+    padding-top: 35px;
+    // padding-bottom: 20px;
+  }
+
+  .review__anchor {
+    top: -77px;
+    // position: absolute;
+  }
+
+  .review__expert {
+    padding-bottom: 30px;
+
+    .review__wrap {
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .review__text {
+    font-size: 17px;
+
+    &::before {
+      left: -36px;
+    }
+  }
+
+  .review__block {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 24px 50px 22px 52px;
+
+    &::after,
+    &::before {
+      margin-left: 23px;
+    }
+  }
+
+  .review__product {
+    position: relative;
+    z-index: 10;
+    display: block;
+    float: right;
+    width: 240px;
+    height: auto;
+    margin-top: -25px;
+    margin-right: 15px;
+    margin-left: 10px;
+
+    img {
+      width: 240px;
+      height: 240px;
+      border-radius: 5px;
+    }
+  }
+
+  .review__wrap {
+    padding-left: 10px;
+  }
+
+  .review__name {
+    font-size: 15px;
+  }
+
+  .review__comment,
+  .review__post {
+    font-size: 13px;
+  }
+
+  .review__link {
+    font-size: 16px;
+  }
+
+  .review__social {
+    right: 45px;
+  }
+}
+
+@media @desktop {
+  .review__anchor {
+    top: -87px;
+    // position: absolute;
+  }
+}

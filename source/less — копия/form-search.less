@@ -1,0 +1,58 @@
+// * {box-sizing: border-box;}
+
+@media @desktop {
+  .form-search {
+  position: relative;
+  width: 50px;
+
+  height: 42px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.form-search__input {
+  height: 45px;
+  width: 0;
+  padding: 0 42px 0 50px;
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  background: transparent;
+  transition: .5s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.form-search__input:focus {
+  width: 790px;
+  z-index: 1;
+  background-color: @white;
+  box-shadow: 0 0 30px rgba(185,176,189,0.5);
+  border-radius: 5px;
+}
+
+.form-search__button {
+  background: transparent;
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 2px;
+  right: -6px;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 15px;
+    left: 0;
+    background-image: url("../img/ic-search.png");
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+}
+
+}

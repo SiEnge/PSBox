@@ -1,0 +1,125 @@
+.feedback {
+  // position: relative;
+  padding-top: 8px;
+  min-height: 507px;
+  width: 320px;
+  margin: 0 auto;
+
+}
+
+
+.feedback__wrap-title {
+  position: relative;
+  padding: 12px 96px 22px 14px;
+}
+
+.feedback__arrow {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.feedback__item {
+  position: relative;
+  margin: 0;
+  border: 1px solid @grey;
+  border-radius: 5px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 3px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 46px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 29px;
+    height: 25px;
+    top: 12px;
+    left: 50%;
+    margin-left: -20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/ic-otz.png");
+  }
+}
+
+.feedback__text {
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.feedback__img {
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+  img {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+  }
+}
+
+.feedback__button {
+  border-width: 1px;
+  border-color: @light-pink;
+  color: @black;
+}
+
+@media @tablet {
+  .feedback {
+    width: 270px;
+    padding-top: 27px;
+  }
+
+  .feedback__wrap-title {
+    padding-left: 0;
+    padding-right: 85px;
+    padding-bottom: 12px;
+  }
+
+  .feedback__arrow {
+    top: 14px;
+    right: -3px;
+  }
+
+  .feedback__item {
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 22px;
+    text-align: center;
+
+    &::before {
+      top:30px;
+      margin-left: -10px;
+    }
+  }
+
+  .feedback__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .feedback__img {
+    width: 120px;
+    height: 120px;
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
+@media @desktop {
+  .feedback {
+    padding-top: 3px;
+  }
+
+  .feedback__wrap-title {
+    padding-top: 0;
+  }
+}

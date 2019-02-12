@@ -1,0 +1,142 @@
+.how {
+  padding-bottom: 18px;
+}
+
+.how__title {
+  padding-bottom: 16px;
+  padding-left: 14px;
+  border-bottom: 1px solid @grey;
+}
+
+.how__wrap {
+  padding-top: 23px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.how__name {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.how__list {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.how__number {
+  font-family: "Intro", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 25px;
+  font-weight: normal;
+  font-style: normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  // padding-t/op: 5px;
+  text-align: center;
+  color: @white;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #922299 40%,#1b529b 100%);
+}
+
+.how__item {
+  font-size: 13px;
+  line-height: 16px;
+  position: relative;
+  width: 140px;
+  min-height: 110px;
+  padding-top: 86px;
+  letter-spacing: -.03em;
+}
+
+.how__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 80px;
+  margin: 0;
+  border-radius: 5px;
+  background-color: @light-grey;
+  overflow: hidden;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -24px;
+    margin-left: -24px;
+  }
+}
+
+.how__text {
+  margin: 0;
+}
+
+@media @tablet {
+  .how {
+    padding-top: 64px;
+    padding-bottom: 8px;
+  }
+
+  .how__title {
+    padding-bottom: 13px;
+    padding-left: 34px;
+  }
+
+  .how__wrap {
+    padding-top: 27px;
+    padding-left: 20px;
+  }
+
+  .how__number {
+    height: 22px;
+    padding-top: 3px;
+  }
+
+  .how__name {
+    font-size: 24px;
+    br {
+      display: none;
+    }
+  }
+
+  .how__item {
+    font-size: 15px;
+    line-height: 20px;
+    width: 200px;
+    padding-top: 90px;
+    padding-bottom: 8px;
+  }
+
+  .how__picture {
+    width: 200px;
+  }
+}
+
+@media @desktop {
+  .how {
+    padding-top: 3px;
+    padding-bottom: 22px;
+  }
+
+  .how__title {
+    margin-bottom: 20px;
+    padding-left: 24px;
+  }
+
+  .how__wrap {
+    padding-top: 7px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}

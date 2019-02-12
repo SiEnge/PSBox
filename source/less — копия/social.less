@@ -1,0 +1,74 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  // padding-top: 22px;
+}
+.social__item {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  &--ig::before {
+    top: 0;
+    left: 0;
+    background-image: url("../img/ic-soc-in.png");
+    width: 24px;
+    height: 24px;
+  }
+  &--fb::before {
+    top: 1px;
+    left: 5px;
+    background-image: url("../img/ic-soc-fb.png");
+    width: 13px;
+    height: 24px;
+  }
+  &--vk::before {
+    top: 7px;
+    left: 0;
+    background-image: url("../img/ic-soc-vk.png");
+    width: 24px;
+    height: 14px;
+  }
+  &--tg::before {
+    top: 1px;
+    left: 0;
+    background-image: url("../img/ic-mes-tel.png");
+    width: 20px;
+    height: 18px;
+  }
+  &--vi::before {
+    top: 1px;
+    left: 0;
+    background-image: url("../img/ic-mes-vay.png");
+    width: 19px;
+    height: 20px;
+  }
+  &--wa::before {
+    top: 1px;
+    left: 0;
+    background-image: url("../img/ic-mes-wac.png");
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media @tablet {
+
+
+}
+
+@media @desktop {
+  .social__list {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+}

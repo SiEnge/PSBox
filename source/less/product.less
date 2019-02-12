@@ -1,0 +1,78 @@
+.product {
+  display: none;
+}
+
+@media @tablet {
+  .product {
+    display: block;
+    margin-top: 5px;
+    margin-right: 20px;
+    padding-top: 22px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(185,176,189,.5);
+  }
+
+  .product__title {
+    font-family: "Intro", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    color: @rose;
+    border-bottom: 1px solid @grey;
+  }
+
+  .product__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-radius: 5px;
+  }
+
+  .product__item {
+    font-family: "Intro", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 12px;
+    position: relative;
+    text-transform: uppercase;
+    border-bottom: 1px solid @grey;
+    background-color: @white;
+    a {
+      display: block;
+      padding: 15px 20px 12px 30px;
+      text-decoration: none;
+      color: @black;
+    }
+    &:last-child {
+      border: none;
+    }
+    &::after {
+      position: absolute;
+      top: 12px;
+      right: 25px;
+      width: 8px;
+      height: 16px;
+      content: "";
+      background-image: url("../img/strl-menu.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &:hover {
+      background-color: @rose;
+      a {
+        color: @white;
+      }
+    }
+  }
+}
+
+@media @desktop {
+  .product {
+    margin-top: 25px;
+  }
+}

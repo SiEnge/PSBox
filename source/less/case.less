@@ -1,0 +1,340 @@
+.case {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.case__offers {
+  padding-left: 8px;
+  padding-right: 5px;
+  padding-bottom: 34px;
+}
+
+.case__subtitle {
+  border-top: 1px solid @grey;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.case__lead {
+  font-size: 15px;
+}
+
+.case__indi {
+  position: relative;
+  .case__subtitle {
+    padding-right: 40px;
+  }
+  .offers__trash {
+    left: auto;
+    right: 0;
+    top: 13px;
+    bottom: auto;
+  }
+
+}
+
+.case__form {
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(185,176,189,.5);
+  border: 1px solid @grey;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 15px;
+  color: @black;
+}
+
+
+.case__total {
+  margin: 0;
+  color: @violet;
+  padding-bottom: 20px;
+}
+
+.case__products {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 10px;
+}
+
+.case__productsitem {
+  display: flex;
+  align-items: center;
+}
+
+.case__productsname {
+  margin: 0;
+  color: @violet;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.case__costlist {
+  padding-left: 5px;
+}
+
+.case__cost {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  &--old {
+    color: @dark-grey;
+    text-decoration: line-through;
+  }
+  &--new {
+    color: @violet;
+  }
+}
+
+.case__wrapbutton {
+  border-top: 1px solid @grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.case__team {
+  margin-top: 20px;
+  background-color: @light-grey;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  // text-align: center;
+  // position: relative;
+
+}
+
+.case__teamlink {
+  position: relative;
+  // padding-left: 35px;
+
+}
+
+.case__link {
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 30px;
+  text-decoration: underline;
+  color: @blue;
+  padding-bottom: 15px;
+}
+
+.case__buttoncopy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("../img/copy.svg");
+  background-size: 20px 24px;
+  background-position: left center;
+}
+
+.case__teamtext {
+  margin: 0;
+  font-size: 16px;
+  // line-height: 20px;
+  line-height: 24px;
+
+  &--info {
+    padding-left: 35px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 3px;
+      left: 0;
+      background-image: url("../img/ic-inf.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+}
+
+.case__customer {
+  // text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  color: @violet;
+
+}
+
+@media @tablet {
+  .case {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .case__offers {
+    padding-left: 0;
+    padding-right: 0;
+    // padding-bottom: 16px;
+    .offers__compare {
+      right: 42px;
+    }
+    .offers__info {
+      padding-right: 100px;
+      width: 340px;
+    }
+  }
+
+  .case__lead {
+    font-size: 16px;
+  }
+
+
+  .case__productsitem {
+    padding-bottom: 5px;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .case__products {
+    padding-left: 15px;
+  }
+
+  .case__productsname {
+    font-size: 20px;
+    font-size: 20px;
+  }
+
+  .case__costlist {
+    padding-left: 10px;
+  }
+
+  .case__cost {
+    font-size: 20px;
+    line-height: 24px;
+
+  }
+
+  .case__form {
+    font-size: 15px;
+    .form__wrap {
+      &--name,
+      &--phone,
+      &--email {
+        width: 210px;
+      }
+      &--range,
+      &--recipient {
+        width: 270px;
+      }
+    }
+  }
+
+  .case__team {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .case__teamlink {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .case__link {
+    padding-left: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .case__buttoncopy {
+    top: -4px;
+    left: -20px;
+  }
+
+  .case__teamtext--info {
+    padding-left: 27px;
+  }
+
+  .case__customer {
+    font-size: 20px;
+  }
+
+
+}
+
+@media @desktop1024 {
+  .case__form {
+    .form__field {
+      padding-left: 22px;
+      padding-right: 22px;
+      // padding-bottom: 0;
+    }
+    .form__fieldlabel {
+      left: 22px;
+    }
+    .form__button {
+      margin-right: 22px;
+    }
+    .form__wrap {
+      &--range,
+      &--recipient {
+        width: 270px;
+      }
+      &--cost {
+        width: 100px;
+      }
+
+      &--consist {
+        .form__list {
+          width: 169px;
+        }
+      }
+      &--addition {
+        width: 360px;
+      }
+      &--file {
+        width: 310px;
+      }
+      &--other {
+        width: 100%;
+        padding-top: 6px;
+      }
+      &--name,
+      &--company,
+      &--phone,
+      &--email {
+        width: 210px;
+      }
+
+    }
+  }
+}
+
+
+@media @desktop {
+  .case__form {
+    .form__field {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .form__fieldlabel {
+      left: 40px;
+    }
+    .form__button {
+      margin-right: 40px;
+    }
+    .form__wrap {
+      &--cost {
+        width: 120px;
+      }
+    }
+
+  }
+}

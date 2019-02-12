@@ -1,0 +1,48 @@
+.form-search {
+  position: relative;
+  width: 50px;
+  height: 45px;
+  margin-left: 36px;
+  cursor: pointer;
+}
+
+.form-search__input {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 45px;
+  margin-top: 5px;
+  padding: 0 40px;
+  transition: 0.5s cubic-bezier(0, .8, 0, 1);
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.form-search__input:focus {
+  z-index: 1;
+  width: 790px;
+  padding: 0 60px;
+  border-radius: 5px;
+  background-color: @white;
+  box-shadow: 0 0 30px rgba(185,176,189,.5);
+}
+
+.form-search__button {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: 42px;
+  height: 45px;
+  margin-top: 2px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  background-image: url("../img/ic-search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}

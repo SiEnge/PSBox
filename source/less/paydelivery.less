@@ -1,0 +1,157 @@
+.paydelivery {
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+
+.paydelivery__cont {
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.paydelivery__wrap {
+  // paddingright: 10px;
+  padding-top: 10px;
+}
+
+.paydelivery__title {
+  border: none;
+}
+.paydelivery__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.paydelivery__item {
+  position: relative;
+  width: 136px;
+  padding-top: 92px;
+  padding-bottom: 10px;
+}
+
+.paydelivery__picture {
+  position: absolute;
+  width: 136px;
+  height: 76px;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+  background-color: @white;
+  background-image: url("../img/fon-var.png");
+  background-size: 12px 12px;
+  background-repeat: repeat;
+  border: 2px solid @violet;
+  border-image: 1 linear-gradient(45deg, #922299 40%,#1b529b 100%);
+  border-radius: 5px;
+  margin: 0;
+  overflow: hidden;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -24px;
+    margin-left: -24px;
+  }
+}
+
+.paydelivery__lead {
+  padding-bottom: 6px;
+}
+
+.paydelivery__itemtitle {
+  margin: 0;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.paydelivery__itemtext {
+  margin: 0;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+@media @tablet {
+  .paydelivery {
+    padding-top: 17px;
+    padding-bottom: 10px;
+  }
+
+  .paydelivery__cont {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .paydelivery__wrap {
+    padding-top: 14px;
+    padding-bottom: 12px;
+  }
+
+  .paydelivery__lead {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 18px;
+  }
+
+  .paydelivery__itemtitle {
+    font-size: 24px;
+    line-height: 24px;
+    min-height: 48px;
+  }
+
+  .paydelivery__item {
+    width: 180px;
+    padding-top: 125px;
+    // &::after {
+    //   width: 180px;
+    //   height: 103px;
+    // }
+    // &::before {
+    //   width: 176px;
+    //   height: 99px;
+    // }
+  }
+
+  .paydelivery__picture {
+    width: 176px;
+    height: 99px;
+  }
+
+
+  .paydelivery__itemtext {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media @desktop {
+  .paydelivery {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 0;
+  }
+
+  .paydelivery__item {
+    width: 200px;
+    padding-top: 115px;
+    // &::after {
+    //   width: 200px;
+    //   height: 103px;
+    // }
+    // &::before {
+    //   width: 196px;
+    //   height: 99px;
+    // }
+  }
+
+  .paydelivery__picture {
+    width: 196px;
+    height: 99px;
+  }
+}

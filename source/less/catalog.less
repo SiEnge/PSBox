@@ -1,0 +1,84 @@
+.catalog {
+  padding-top: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+}
+
+.catalog__text {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding-top: 7px;
+}
+
+.catalog__offers {
+  padding-left: 8px;
+  padding-right: 5px;
+  padding-bottom: 35px;
+}
+
+.catalog__banner {
+  padding-bottom: 10px;
+  .banner__wrap {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .banner__button {
+    min-width: 110px;
+  }
+}
+
+
+@media @tablet {
+  .catalog {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .catalog__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .catalog__banner {
+    padding-top: 6px;
+    .banner__wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .banner__title {
+      width: 500px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .catalog__offers {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid @grey;
+    &:last-child {
+      border: none;
+    }
+
+  }
+}
+
+@media @desktop {
+  .catalog__banner .banner__title {
+    min-height: auto;
+  }
+
+
+  .catalog__offers {
+    .offers__wrap {
+      padding-right: 35px;
+    }
+  }
+}

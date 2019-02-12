@@ -1,0 +1,259 @@
+.help__text {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 6px;
+  padding-bottom: 8px;
+}
+
+.help__form {
+  padding-bottom: 20px;
+}
+
+.help__field {
+  position: relative;
+  background-color: @white;
+  border-radius: 5px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 62px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0 0 30px rgba(185,176,189,.5);
+  padding-bottom: 30px;
+  margin-left: 8px;
+  margin-right: 8px;
+  &--oped {
+    display: block;
+  }
+  &--closed {
+    display: none;
+  }
+
+
+}
+
+.help__fieldlegend {
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  color: @dark-grey;
+  font-family: "Intro", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  &--checked {
+    color: @violet;
+  }
+}
+
+.help__fieldtext {
+  color: @violet;
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.help__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.help__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex: 0 0 45%;
+  // padding-left: 5px;
+  // padding-right: 5px;
+  overflow: hidden;
+  &--none {
+    display: none;
+  }
+}
+
+.help__item {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.help__radio {
+  display: none;
+}
+
+.help__radiolabel {
+  position: relative;
+  padding-left: 22px;
+  cursor: pointer;
+  font-size: 16px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: 0;
+    border: 3px solid @dark-grey;
+    background-color: @white;
+    border-radius: 50%;
+  }
+}
+
+.help__radio:checked + .help__radiolabel::before {
+    border-color: @grey;
+    border-width: 5px;
+    background-color: @violet;
+    width: 6px;
+    height: 6px;
+}
+
+.help__button {
+  padding: 0;;
+  background-color: @violet;
+  border: none;
+  color: @white;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 10px 20px;
+  font-family: "Intro", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: normal;
+  font-style: normal;
+  &--disabled {
+    background-color: @grey;
+    color: @white;
+    cursor: default;
+  }
+}
+
+.help__link {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 100px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  cursor: pointer;
+  &--dashed {
+   border-bottom: 1px dashed @black;
+  }
+}
+
+.help__result {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: @light-grey;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 110px;
+}
+
+.help__resulttitle {
+  font-family: "Intro", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
+  color: @violet;
+  margin: 0;
+}
+
+@media @tablet {
+  .help__text {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .help__form {
+    padding-bottom: 40px;
+  }
+
+  .help__wrap {
+    padding-bottom: 25px;
+  }
+
+  .help__wrap--left,
+  .help__wrap--right {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .help__field {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 25px;
+  }
+
+  .help__fieldlegend {
+    font-size: 32px;
+    line-height: 40px;
+    left: 20px;
+    top: 38px;
+  }
+
+  .help__fieldtext {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .help__list {
+    flex: 0 0 25%;
+  }
+
+  .help__list--none {
+    display: block;
+  }
+
+  .help__radiolabel {
+    font-size: 18px;
+  }
+
+  .help__link {
+    width: auto;
+    top: 38px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .help__result {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 185px;
+    .help__link {
+      top: 10px;
+      right: 5px;
+    }
+  }
+
+  .help__resulttitle {
+    font-size: 28px;
+    line-height: 34px;
+    br {
+      display: none;
+    }
+  }
+}

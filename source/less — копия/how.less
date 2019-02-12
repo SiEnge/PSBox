@@ -1,0 +1,160 @@
+.how {
+  padding-bottom: 18px;
+
+}
+
+.how__title {
+  padding-left: 14px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid @grey;
+}
+
+.how__wrap {
+  padding-top: 23px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.how__name {
+  margin: 0;
+  padding-bottom: 16px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+
+.how__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.how__number {
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  background: linear-gradient(45deg, #922299 40%,#1b529b 100%);
+  color: @white;
+  font-weight: normal;
+  font-family: "Intro";
+  font-style: normal;
+  font-size: 12px;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.how__item {
+  position: relative;
+  width: 140px;
+  min-height: 110px;
+  padding-top: 86px;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  p {
+    margin: 0;
+  }
+  &::before {
+    background-color: @light-grey;
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 80px;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: 48px 48px;
+    background-position: center;
+  }
+  &--var1-1::before {
+    background-image: url("../img/ic-var-1.png");
+  }
+  &--var1-2::before {
+    background-image: url("../img/ic-var-2.png");
+    background-size: 38px 48px;
+  }
+  &--var1-3::before {
+    background-image: url("../img/ic-var-3.png");
+  }
+  &--var1-4::before {
+    background-image: url("../img/ic-var-4.png");
+    background-size: 48px 40px;
+  }
+  &--var2-1::before {
+    background-image: url("../img/ic-var-2.png");
+    background-size: 38px 48px;
+  }
+  &--var2-2::before {
+    background-image: url("../img/ic-var-6.png");
+  }
+  &--var2-3::before {
+    background-image: url("../img/ic-var-3.png");
+  }
+  &--var2-4::before {
+    background-image: url("../img/ic-var-4.png");
+    background-size: 48px 40px;
+  }
+}
+
+@media @tablet {
+  .how {
+    padding-top: 64px;
+    padding-bottom: 8px;
+  }
+
+  .how__title {
+    padding-left: 34px;
+    padding-bottom: 13px;
+  }
+
+  .how__wrap {
+    padding-top: 27px;
+    padding-left: 20px;
+  }
+
+  .how__name {
+    font-size: 24px;
+    br {
+      display: none;
+    }
+  }
+
+
+  .how__item {
+    width: 200px;
+    font-size: 15px;
+    line-height: 20px;
+    padding-top: 90px;
+    padding-bottom: 8px;
+
+    &::before {
+      width: 200px;
+    }
+  }
+}
+
+@media @desktop {
+  .how {
+    padding-top: 3px;
+    padding-bottom: 22px;
+  }
+
+  .how__title {
+    padding-left: 24px;
+    margin-bottom: 20px;
+  }
+
+  .how__wrap {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 7px;
+  }
+}

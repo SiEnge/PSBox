@@ -1,0 +1,47 @@
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+
+@media @tablet {
+  .container {
+    width: 750px;
+  }
+
+  .container--left {
+    width: 280px;
+  }
+
+  .container--right {
+    width: 455px;
+  }
+}
+
+@media @desktop1024 {
+  .container--1024 {
+    width: 1024px;
+  }
+}
+
+@media @desktop {
+  .container {
+    width: 1170px;
+  }
+
+  .container--left,
+  .container--leftdesktop {
+    width: 280px;
+  }
+
+  .container--right,
+  .container--rightdesktop {
+    width: 870px;
+  }
+
+  .container--shrink {
+    width: 840px;
+    margin-right: 0;
+    margin-left: 330px;
+  }
+}

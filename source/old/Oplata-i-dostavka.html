@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>psbox</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<span id="main_preload"></span>
+<div class="wrap bg-white">
+    <header>
+        <div class="top">
+            <div class="container">
+                <div class="top__top">
+                    <div class="top__logo">
+                        <a href="/" class="logo"></a>
+                    </div>
+                    <div class="top__center">
+                        <div class="search">
+                            <button class="btn-search"></button>
+                        </div>
+                        <div class="menu">
+                            <nav>
+                                <a href="#">О нас</a>
+                                <a href="#">Как сделать заказ</a>
+                                <a href="#">Оплата и доставка</a>
+                                <a href="#">Отзывы</a>
+                                <a href="#">Контакты</a>
+                            </nav>
+                        </div>
+                        <div class="soc">
+                            <a href="#"><img src="img/ic-mes-tel.png" alt=""></a>
+                            <a href="#"><img src="img/ic-mes-vay.png" alt=""></a>
+                            <a href="#"><img src="img/ic-mes-wac.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="top__basket">
+                        <div>
+                            <button class="btn-favor" data-count="23"></button>
+                            <div class="pop__basket">
+                                <div class="title"><h4>избранные товары</h4></div>
+                                <div class="favorit">
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav active"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price fav">
+                                    <div>2 подарка 3500 Руб.</div>
+                                    <span>+ Индивидуальный заказ</span>
+                                </div>
+                                <div class="save-fav">
+                                    <div class="info">Чтобы сохранить свой список избранных подарков, отправьте их себя на email</div>
+                                    <form action="" method="post">
+                                        <div class="form-fav">
+                                            <input type="text" class="style-input-text" placeholder="Ваш email">
+                                            <button type="submit" class="btn btn-pur">Отправить</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="top__basket-bg"></div>
+                        </div>
+                        <div>
+                            <button class="btn-basket" data-count="5"></button>
+                            <div class="pop__basket">
+                                <div class="title">
+                                    <h4>Корзина</h4>
+                                    <a href="#" class="complec-link">Создать коллективный заказ</a>
+                                </div>
+                                <div class="favorit">
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav active"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <div>1 450 Руб.</div>
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="left">
+                                            <a href="img/img-ban2.jpg" data-fancybox="favorit" class="img" style="background-image: url('img/img-ban2.jpg')"></a>
+                                            <div>Черничные ночи</div>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="ic-fav"></a>
+                                            <a href="#" class="ic-del"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price top-border">
+                                    <div>2 подарка 3500 Руб.</div>
+                                    <span>+ Индивидуальный заказ</span>
+                                </div>
+                                <div class="oform">
+                                    <a href="#" type="submit" class="btn btn-pur">оформить заказ</a>
+                                </div>
+                            </div>
+                            <div class="top__basket-bg"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="top__bottom">
+                    <ul class="menu">
+                        <li class="sub open">
+                            <a href="#">Каталог подарков</a>
+                            <ul>
+                                <li><a href="#" data-title="Любимым">Любимым</a></li>
+                                <li><a href="#" data-title="Друзьям">Друзьям</a></li>
+                                <li><a href="#" data-title="Родителям">Родителям</a></li>
+                                <li><a href="#" data-title="Коллегам">Коллегам</a></li>
+                                <li><a href="#" data-title="На день Рождения">На день Рождения</a></li>
+                                <li><a href="#" data-title="На свадьбу">На свадьбу</a></li>
+                                <li><a href="#" data-title="На годовщину">На годовщину</a></li>
+                                <li><a href="#" data-title="На выписку">На выписку</a></li>
+                                <li><a href="#" data-title="На новоселье">На новоселье</a></li>
+                                <li><a href="#" data-title="Просто так">Просто так</a></li>
+                                <li><a href="#" data-title="День Святого Валентина">День Святого Валентина</a></li>
+                                <li><a href="#" data-title="23 февраля">23 февраля</a></li>
+                                <li><a href="#" data-title="8 марта">8 марта</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">индивидуальный заказ</a></li>
+                        <li><a href="#">помощь в выборе подарка</a></li>
+                        <li><a href="#">корпоративным клиентам</a></li>
+                    </ul>
+                    <button class="menu-btn"><span></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container left-p">
+            <div class="bread-crumbs">
+                <a href="/">Главная</a>
+                <span>оплата и доставка</span>
+            </div>
+            <div class="title-con">
+                <h1>оплата и доставка</h1>
+            </div>
+            <div class="what-colletive-zakaz">
+                <h2>Оплата</h2>
+                <p>Кризис, согласно традиционным представлениям, иллюстрирует экспериментальный midi-контроллер. Легко проверить, что бихевиоризм выбирает эгоцентризм. Код монотонно нейтрализует разрыв функции. Огибающая, в первом </p>
+                <div class="why-convenient">
+                    <div class="items">
+                        <div class="item">
+                            <div class="img ic-1"></div>
+                            <span>Наличными средствами</span>
+                            <p>Автоматизм, согласно традиционным представлениям, продолжает гомеостаз. Коллективное бессознательное отчуждает математический анализ голосовое поле.</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="img ic-2"></div>
+                            <span>Картой при получении</span>
+                            <p>Автоматизм, согласно традиционным представлениям, продолжает гомеостаз. Коллективное бессознательное отчуждает математический анализ голосовое поле.</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="img ic-3"></div>
+                            <span>Банковским переводом</span>
+                            <p>Автоматизм, согласно традиционным представлениям, продолжает гомеостаз. Коллективное бессознательное отчуждает математический анализ голосовое поле.</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="img ic-4"></div>
+                            <span>Электронными деньгами</span>
+                            <p>Автоматизм, согласно традиционным представлениям, продолжает гомеостаз. Коллективное бессознательное отчуждает математический анализ голосовое поле.</p>
+                        </div>
+                    </div>
+                </div>
+                <h2>Доставка</h2>
+                <p>Кризис, согласно традиционным представлениям, иллюстрирует экспериментальный midi-контроллер. Легко проверить, что бихевиоризм выбирает эгоцентризм. Код монотонно нейтрализует разрыв функции. Огибающая, в первом приближении, вырождена. </p>
+                <div class="why-convenient">
+                    <div class="items">
+                        <div class="item">
+                            <div class="img ic-5"></div>
+                            <span>Самовывоз</span>
+                            <p>Автоматизм, согласно традиционным представлениям, продолжает гомеостаз. Коллективное бессознательное отчуждает математический анализ голосовое поле.</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="img ic-6"></div>
+                            <span>Курьером</span>
+                            <p>Автоматизм, согласно традиционным представлениям, продолжает гомеостаз. Коллективное бессознательное отчуждает математический анализ голосовое поле.</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="img ic-7"></div>
+                            <span>Транспортной компанией</span>
+                            <p>Автоматизм, согласно традиционным представлениям, продолжает гомеостаз. Коллективное бессознательное отчуждает математический анализ голосовое поле.</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="img ic-8"></div>
+                            <span>Почтовым отправлением</span>
+                            <p>Автоматизм, согласно традиционным представлениям, продолжает гомеостаз. Коллективное бессознательное отчуждает математический анализ голосовое поле.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-bk">
+                <div class="text">+7 (495) 220 09 26 <br>г. Москва, ул. Донская, д. 8 стр. 1</div>
+                <div class="text">Приём заказов: <br>ежедневно <br>с 09.00 до 21.00</div>
+                <div class="mes">
+                    <a href="#"><img src="img/ic-mes-tel.png" alt=""></a>
+                    <a href="#"><img src="img/ic-mes-vay.png" alt=""></a>
+                    <a href="#"><img src="img/ic-mes-wac.png" alt=""></a>
+                </div>
+                <div class="soc">
+                    <a href="#"><img src="img/ic-soc-in.png" alt=""></a>
+                    <a href="#"><img src="img/ic-soc-fb.png" alt=""></a>
+                    <a href="#"><img src="img/ic-soc-vk.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-cop">PSBox © 2015 - 2018 г.</div>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="js/query-selector.js"></script>
+<script src="js/lib.js"></script>
+</body>
+</html>

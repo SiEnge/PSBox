@@ -1,0 +1,86 @@
+.title {
+  font-family: "Intro-inline", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  font-style: normal;
+  margin: 0;
+  letter-spacing: -0.03em;
+  color: @black;
+  &::first-letter {
+    font-size: 26px;
+  }
+
+}
+
+.title--headline {
+  font-size: 34px;
+  line-height: 34px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid @grey;
+  &::first-letter {
+    font-size: 34px;
+  }
+}
+
+.title--subtitle {
+  font-size: 24px;
+  line-height: 24px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  text-align: left;
+  border-bottom: 1px solid @grey;
+  &::first-letter {
+    font-size: 24px;
+  }
+}
+
+.title--subsubtitle {
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 6px;
+  padding-bottom: 0;
+  text-align: left;
+  // border-bottom: 1px solid @grey;
+  &::first-letter {
+    font-size: 20px;
+  }
+}
+
+.title--nonborder {
+    border: none;
+  }
+
+
+@media @tablet {
+  .title {
+    font-size: 30px;
+    line-height: 35px;
+    padding-left: 20px;
+    &::first-letter {
+      font-size: 40px;
+    }
+  }
+
+  .title--headline {
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid @grey;
+    &::first-letter {
+      font-size: 40px;
+    }
+  }
+
+  .title--subtitle {
+    padding-bottom: 13px;
+  }
+
+  .title--subsubtitle {
+    padding-left: 0;
+
+  }
+}

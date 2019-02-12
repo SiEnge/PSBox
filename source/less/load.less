@@ -1,0 +1,70 @@
+.load {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  svg {
+    margin: 80px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+.load__line1,
+.load__line2,
+.load__line3,
+.load__line4,
+.load__line5,
+.load__line6,
+.load__line7,
+.load__line8,
+.load__line9,
+.load__line10,
+.load__line11,
+.load__line12 {
+  opacity: 0;
+  animation: show 1s infinite;
+}
+
+.load__line1 {
+  animation-delay: 83ms;
+}
+.load__line2 {
+  animation-delay: 166ms;
+}
+.load__line3 {
+  animation-delay: 250ms;
+}
+.load__line4 {
+  animation-delay: 333ms;
+}
+.load__line5 {
+  animation-delay: 416ms;
+}
+.load__line6 {
+  animation-delay: 500ms;
+}
+.load__line7 {
+  animation-delay: 583ms;
+}
+.load__line8 {
+  animation-delay: 666ms;
+}
+.load__line9 {
+  animation-delay: 750ms;
+}
+.load__line10 {
+  animation-delay: 833ms;
+}
+.load__line11 {
+  animation-delay: 916ms;
+}
+.load__line12 {
+  animation-delay: 1000ms;
+}
+
+@keyframes show {
+  50% {
+    opacity: 1;
+  }
+}
